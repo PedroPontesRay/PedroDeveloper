@@ -1,0 +1,32 @@
+:root{
+    --color-text-beige: #ffe7cd;
+    --background-color: black;
+}
+
+body{
+    background-image: linear-gradient(
+        var(--background-color) 10%,
+        var(--color-text-beige)
+    );
+}
+
+
+.bg-nav{
+    background-color: black;
+    color: #ffe7cd;
+}
+
+.text-nav{
+    color: var(--color-text-beige);
+    font-family: fontNav;
+}
+
+
+@font-face {
+    font-family: fontNav;
+    src: url(/imagem/Lemon\ Days.otf);
+}
+
+.delayMediumReveal{
+    color: #ffffff;
+}
