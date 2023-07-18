@@ -30,3 +30,11 @@ body{
 .delayMediumReveal{
     color: #ffffff;
 }
+
+.typewriter::after{
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    color: black;
+}
