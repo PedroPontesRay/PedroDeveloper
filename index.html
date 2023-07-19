@@ -4,32 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    
+    
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="img/svg" href="/imagem/RabbitIcon.svg">
     <title>Pontes//Portfólio</title>
 
-    <script src="https://kit.fontawesome.com/2e4ef61ab0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <link rel="icon" href="/imagem/RabbitIcon.svg">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
   </head>
 
 
 
   <body>
 
-    <header class="navbar navbar-expand-lg bg-nav">
+    
+    
+    <!--
+      <header class="navbar navbar-expand-lg bg-nav">
         <div class="container justify-content-center">
           <a class="navbar-brand" href="#">
-            <img src="/imagem/Rabbitbege.svg">
+              
+            <img src="../imagem/fotodeperfil.png" width="100px">
           </a>
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-  
-  
+          
+          
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav text-nav">
               <li class="nav-item active">
@@ -44,24 +52,49 @@
             </ul>
           </div>
         </div>
-    </header>
-      
-
-    <section class="py-5">
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <img src="imagem/icon.svg">
-        </div>
-        <div class="col-4">
-          <h4 class="">Quem sou</h4>
-          <h2 class="">Pedro Henrique Pontes</h2>
-          <h3>
-            <p class="delayLargeReveal typewriter">Um programador Unity com conhecimento em C#, HTML, CSS e Photoshop é um profissional altamente qualificado e versátil, capaz de desenvolver jogos e aplicativos imersivos.</p>
-            
-          </h3>
-        </div>
+      </header>
+    -->
+    
+    <aside id="header">
+      <section class="profile ">
+        
+        <img src="./imagem/fotodeperfil.png" alt="foto de perfil do Pedro">
+        <h1>Pedro Henrique</h1>
+        <div class="social-links mt-4 text-center">
+          <a target="_blank" href="https://www.linkedin.com/in/pedro-henrique-b80784176/">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/PedroPontesRay">
+          <i class="bi bi-github"></i>
+        </a>
       </div>
     </section>
+
+    <nav id="navbar" class="nav-menu">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i>
+            Inicio</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"><i class="bi bi-file-person-fill"></i>Sobre</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"><i class="bi bi-braces"></i>Habilidades</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"><i class="bi bi-pen-fill"></i>Projetos</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"><i class="bi bi-envelope-paper-fill"></i>Contatos</a>
+        </li>
+      </ul>
+    </nav>
+
+    </aside>
+      
+
+    
 
 
     <footer>
@@ -69,7 +102,9 @@
     </footer>
 
 
-
+    <script src="./static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
+
+  <script src="./static/script.js"></script>
 </html>
