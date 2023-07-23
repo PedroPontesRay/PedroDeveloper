@@ -9,10 +9,6 @@ body{
     font-family: Roboto,Arial;
     width: 100%;
     height: 100%;
-    /*background-image: linear-gradient(
-        var(--background-color) 10%,
-        var(--color-text-beige)
-    );*/
 }
 
 #header{
@@ -90,15 +86,13 @@ body{
 }
 
 section#inicio{
-    background-image: url("./imagem/cafe.jpg");
+    background-image: url("../static/img/BackgroundFundo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
     width: 100%;
     height: 100vh;
-
 }
 
 section#inicio h2{
