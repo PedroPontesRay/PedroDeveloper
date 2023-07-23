@@ -168,3 +168,23 @@ i.menu-mobile{
         margin-left: 0;
     }
 }
+
+a#linknodec{
+    color: #000000;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.61);
+}
+   
+body::-webkit-scrollbar-thumb {
+background-color: #fac58d;
+border-radius: 10%;
+}
+
+
