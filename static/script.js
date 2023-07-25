@@ -10,7 +10,7 @@ menuMobile.addEventListener('click', () => {
     body.classList.toggle("menu-nav-active");
 });
 
-
+/*codigo para o carousel*/
 let items = document.querySelectorAll('.carousel .carousel-item')
 
 items.forEach((el) => {
@@ -39,3 +39,22 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
+
+/* fecha o menu quando clicar em qualquer item  da lista*/
+
+const navItem= document.querySelectorAll('.nav-item')
+
+navItem.forEach(item => {
+    item.addEventListener("click", () =>{
+        if(body.classList.contains("menu-nav-active")){
+            body.classList.remove("menu-nav-active")
+            menuMobile.classList.replace("bi-x","bi-list")
+        }
+    })
+})
+    
+
+
+
+
