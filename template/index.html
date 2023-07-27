@@ -64,7 +64,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link p-2" href="#">
+          <a class="nav-link p-2" href="#projetos">
             <i class="bi bi-pen-fill pe-2"></i> 
             Projetos</a>
         </li>
@@ -83,13 +83,14 @@
   <main id="main">
 
     <section id="inicio" class="row m-0 p-0">
-      <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
-
-        <h2 class="text-white text-shadow">Pedro Henrique</h2>
-        <span id="subtitle" class="text-white text-shadow">Programador Unity</span>
+      <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+        <div id="text-start" class="text-white text-shadow">
+          <h2>Pedro Henrique</h2>
+          <span id="subtitle">Programador Unity</span>
+        </div>
 
       </div>
-      <div class="col-md-7 d-flex justify-content-end align-items-end">
+      <div class="col-md-6 d-flex justify-content-end align-items-end">
 
         <div id="arraste" class="d-flex align-items-center">
 
@@ -105,24 +106,24 @@
         <div class="col-md-12">
           <h2 class="pt-3">Sobre mim</h2>
           <p>Olá! Meu nome é Pedro Henrique, e sou um programador apaixonado pela criação de jogos digitais com o Unity
-            utilizando C#. Atualmente, estou cursando Jogos Digitais, buscando aprimorar minhas habilidades e
+            . Atualmente, estou cursando Jogos Digitais, buscando aprimorar minhas habilidades e
             conhecimentos nessa área. Além disso, dedico parte do meu tempo ao desenvolvimento de projetos pessoais de
             jogos, onde posso explorar minha criatividade e colocar em prática tudo o que aprendo. Estou animado com as
             possibilidades que o futuro reserva e ansioso para continuar crescendo como desenvolvedor de jogos.</p>
         </div>
-
       </div>
       <div class="row mt-4">
         <div class="col-md-4">
           <img class="img-fluid shadow" src="../static/img/fotoperfil2.jpg" alt="foto de perfil do Pedro">
         </div>
         <div class="col-md-8">
-          <h3>Estagiario QA na QUbyte interactive</h3>
+          <h3>Programador de porting </h3>
           <p>Na QUbyte, como estagiário, tenho o privilégio de testar jogos de todas as categorias e avaliar se atendem
             aos requerimentos da PlayStation, Xbox e Nintendo. </p>
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
+              <h2>Informações</h2>
               <ul class="list-group list-group-flush fs-5">
                 <li class="list-group-item">
                   <i class="bi bi-balloon-fill"></i> Idade:
@@ -134,8 +135,8 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-6">
-              <h2>Formações e experiencias</h2>
+            <div class="col-md-4">
+              <h2>Formações</h2>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <i class="bi bi-joystick"></i>
@@ -144,20 +145,8 @@
                   <br>
                   <span class="fw-lighter">2 anos de curso 2022/2023</span>
                 </li>
-                <li class="list-group-item">
-                  <i class="bi bi-joystick"></i>
-                  <a target="_blank" id="linknodec" href="https://www.qubyteinteractive.com/site/">
-                    Quality assurance na QUbyteinteractive</a>
-                  <br>
-                  <span class="fw-lighter">fev/2023 atualmente</span>
-                </li>
-                <li class="list-group-item">
-                  <i class="bi bi-pc-display-horizontal" href=""></i>
-                  <a target="_blank" id="linknodec" href="https://www.smartconecta.com.br">
-                    Técnico de informatica na Smart Conecta</a>
-                  <br>
-                  <span class="fw-lighter">3 anos de trabalho 2019/2022</span>
-                </li>
+                
+                
                 <li class="list-group-item">
                   <i class="bi bi-cpu-fill"></i>
                   Técnico em Montagem e manutenção de microcontroladores no SENAI
@@ -173,13 +162,32 @@
 
               </ul>
             </div>
+            <div class="col-md-4">
+              <h2>Experiencias</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="bi bi-joystick"></i>
+                  <a target="_blank" id="linknodec" href="https://www.qubyteinteractive.com/site/">
+                    Quality assurance na QUbyteinteractive</a>
+                  <br>
+                  <span class="fw-lighter">fev/2023 atualmente</span>
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-pc-display-horizontal" href=""></i>
+                  <a target="_blank" id="linknodec" href="https://www.smartconecta.com.br">
+                    Técnico de informatica na Smart Conecta</a>
+                  <br>
+                  <span class="fw-lighter">3 anos de trabalho 2019/2022</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
 
         </div>
       </div>
     </section>
-    <section id="habilidades" class="mt-5">
+    <section id="habilidades" class="py-3 container">
       <h2>Habilidades</h2>
       <p> Durante minhas experiencias de faculdade e trabalho eu adquiri habilidades de programação e computação, a
         maioria delas estão aqui a baixo</p>
@@ -191,7 +199,7 @@
             <div class="carousel-item justify-content-center active">
               <div class="col-md-3">
                 <div class="card" style="width: 10rem;">
-                  <img src="../static/img/icons8-unreal-engine.svg" class="img-fluid mx-auto d-block" alt="img5">
+                  <img src="../static/img/icons8-unreal-engine.svg" class="img-fluid mx-auto d-block" alt="icone unreal engine">
                   <div class="card-body">
                     <p class="card-text">6 meses de experiencias</p>
                   </div>
@@ -201,7 +209,7 @@
             <div class="carousel-item justify-content-center">
               <div class="col-md-3">
                 <div class="card" style="width: 10rem;">
-                  <img src="../static/img/icons8-c-96.svg" class="img-fluid mx-auto d-block" alt="img5">
+                  <img src="../static/img/icons8-c-96.svg" class="img-fluid mx-auto d-block" alt="icone c#">
                   <div class="card-body">
                     <p class="card-text">2 anos de experiencias</p>
                   </div>
@@ -211,7 +219,7 @@
             <div class="carousel-item justify-content-center">
               <div class="col-md-3">
                 <div class="card" style="width: 10rem;">
-                  <img src="../static/img/icons8-css3.svg" class="img-fluid mx-auto d-block" alt="img5">
+                  <img src="../static/img/icons8-css3.svg" class="img-fluid mx-auto d-block" alt="icone css">
                   <div class="card-body">
                     <p class="card-text">2 anos de experiencias</p>
                   </div>
@@ -221,7 +229,7 @@
             <div class="carousel-item justify-content-center">
               <div class="col-md-3">
                 <div class="card" style="width: 10rem;">
-                  <img src="../static/img/icons8-html.svg" class="img-fluid mx-auto d-block" alt="img5">
+                  <img src="../static/img/icons8-html.svg" class="img-fluid mx-auto d-block" alt="icone html">
                   <div class="card-body">
                     <p class="card-text">2 anos de experiencias</p>
                   </div>
@@ -231,7 +239,17 @@
             <div class="carousel-item justify-content-center">
               <div class="col-md-3">
                 <div class="card" style="width: 10rem;">
-                  <img src="../static/img/icons8-unity.svg" class="img-fluid mx-auto d-block" alt="img5">
+                  <img src="../static/img/icons8-unity.svg" class="img-fluid mx-auto d-block" alt="icone unity">
+                  <div class="card-body">
+                    <p class="card-text">2 anos de experiencias</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item justify-content-center">
+              <div class="col-md-3">
+                <div class="card" style="width: 10rem;">
+                  <img src="../static/img/icons8-photoshop.svg" class="img-fluid mx-auto d-block" alt="Icone photoshop">
                   <div class="card-body">
                     <p class="card-text">2 anos de experiencias</p>
                   </div>
@@ -249,6 +267,44 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
+
+    </section>
+    <section id="projetos" class="py-3">
+      
+      <div class="container row">
+          <h2>Projetos</h2>
+          <p>Projetos que fiz durante a faculdade e trabalho</p>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../static/img/xepadive.jpg" class="card-img-top" alt="Imagem 1">
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Xepadive</h5>
+                <p class="card-text">Projeto produzido na gamejam da heinz</p>
+                <a href="https://lekgames.itch.io/xepadive" class="btn btn-primary">Link para o itchio</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="caminho/para/imagem2.jpg" class="card-img-top" alt="Imagem 2">
+              <div class="card-body">
+                <h5 class="card-title">Título do Card 2</h5>
+                <p class="card-text">Texto do Card 2. Mais informações sobre este card aqui.</p>
+                <a href="#" class="btn btn-primary">Botão do Card 2</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="caminho/para/imagem3.jpg" class="card-img-top" alt="Imagem 3">
+              <div class="card-body">
+                <h5 class="card-title">Título do Card 3</h5>
+                <p class="card-text">Texto do Card 3. Informações adicionais podem ser inseridas aqui.</p>
+                <a href="#" class="btn btn-primary"></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </section>
   </main>

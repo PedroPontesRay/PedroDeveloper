@@ -122,6 +122,9 @@ section#inicio div#arraste a{
     text-decoration: none;
     color: #ffffff;
 }
+div#text-start{
+    margin-left: 25%;
+}
 
 i.menu-mobile{
     position: fixed;
@@ -161,7 +164,7 @@ i.menu-mobile{
         font-size:3.5rem;
     }
     section#inicio span#subtitle{
-        margin-right:0;
+        margin-right:10px;
         font-size: 1rem;
     }
     #main{
