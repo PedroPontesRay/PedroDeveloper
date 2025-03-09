@@ -1,9 +1,33 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #333333;
+    --header-text: #ffffff;
+    --link-color: #0077cc;
+}
+
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --header-bg: #111111;
+    --header-text: #f5f5f5;
+    --link-color: #66b3ff;
+}
+[data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #111111;
+    --header-text: #000000;
+    --link-color: #66b3ff;
+}
+
+a {
+    color: var(--link-color);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .container {
@@ -13,9 +37,11 @@ body {
     padding: 20px 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
+/* Estilos para o Header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 0;
 }
 
@@ -23,6 +49,54 @@ header h1 {
     margin: 0;
     font-size: 24px;
 }
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--link-color);
+}
+
+/* Estilo para o botão "Contato" */
+header nav ul li a.btn-contact {
+    background-color: var(--link-color);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.btn-contact:hover {
+    background-color: #005bb5; /* Cor mais escura no hover */
+}
+
+/* Ajuste para o botão de alternância de tema */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--header-text);
+}
+
+/*HEADER*/
 
 nav ul {
     list-style: none;

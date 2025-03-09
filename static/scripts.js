@@ -9,3 +9,29 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
+
+// Seleciona o botão de alternância
+const themeToggle = document.getElementById('theme-toggle');
+
+// Verifica se há uma preferência salva no localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'dark') {
+        themeToggle.textContent = '☀️';
+    }
+}
+
+// Função para alternar entre os temas
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    }
+});
