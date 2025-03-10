@@ -5,6 +5,8 @@
     --header-text: #ffffff;
     --link-color: #0077cc;
     --linedivider-color: #ff0000;
+    --background-transparent: rgba(255, 255, 255, 0);
+    --button-selected: #313131;
 }
 
 [data-theme="dark"] {
@@ -309,6 +311,101 @@ nav ul li a {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 /*End Habilidades*/
+
+/*Projects*/
+.projects {
+    padding: 50px 0;
+}
+
+.projects h2 {
+    text-align: left; /* Título alinhado à esquerda */
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card.reverse {
+    flex-direction: row-reverse; /* Inverte a ordem da imagem e do conteúdo */
+}
+
+.project-image {
+    flex: 1; /* Ocupa metade do espaço */
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 500px; /* Largura máxima da imagem */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o botão na base */
+    flex-grow: 1; /* Ocupa todo o espaço disponível */
+    height: 100%; /* Garante que ocupe a altura total do card */
+}
+
+.project-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.project-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--background-transparent);
+    color: var(--header-text);
+    padding: 10px 20px;
+    border: 2px solid var(--linedivider-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: var(--button-selected);
+    color: #ffffff;
+    border-color: var(--background-transparent);
+    transform: translateY(-2px);
+}
+
+.project-button .arrow {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-button:hover .arrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+/*End Projects*/
 
 .custom-divider {
     height: 1px; /* Espessura da linha */
