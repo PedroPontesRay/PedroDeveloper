@@ -4,6 +4,7 @@
     --header-bg: #333333;
     --header-text: #ffffff;
     --link-color: #0077cc;
+    --linedivider-color: #ff0000;
 }
 
 [data-theme="dark"] {
@@ -11,14 +12,18 @@
     --text-color: #f5f5f5;
     --header-bg: #111111;
     --header-text: #f5f5f5;
+    --card-text: #ffffff;
     --link-color: #66b3ff;
+    --linedivider-color: #ffffff;
 }
 [data-theme="light"] {
     --background-color: #ffffff;
     --text-color: #000000;
     --header-bg: #111111;
     --header-text: #000000;
+    --card-text: #ffffff;
     --link-color: #66b3ff;
+    --linedivider-color: #000000;
 }
 
 a {
@@ -96,6 +101,14 @@ header nav ul li a.btn-contact:hover {
     color: var(--header-text);
 }
 
+header nav ul li a.btn-contact {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+}
+header nav ul li a.btn-contact:hover {
+    border-color: #fff;
+}
+
 /*HEADER*/
 
 nav ul {
@@ -114,15 +127,156 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
+/*Intro*/
+/* Estilos para a seção Início */
 .intro {
     text-align: center;
     padding: 50px 0;
 }
 
+.intro-image img {
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .intro h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.intro-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 20px;
+}
+
+.intro-cards .card {
+    background-color: var(--header-bg);
+    color: var(--card-text);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/*End intro*/
+
+/* Estilos para a seção Habilidades */
+.skills {
+    padding: 50px 0;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.column {
+    flex: 1; /* Cada coluna ocupa metade do espaço */
+}
+
+.about-me h3, .contact-links h3, .hard-skills h3, .soft-skills h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.contact-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-links ul li {
+    margin-bottom: 10px;
+}
+
+.contact-links ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contact-links ul li a:hover {
+    color: var(--header-bg);
+}
+
+.software-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.software-icons img {
+    width: 50px; /* Tamanho dos ícones */
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.software-icons img:hover {
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+.soft-skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: var(--header-bg);
+    color: var(--card-text);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Faz o card se adaptar ao conteúdo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/*End Hebilidades*/
+
+.custom-divider {
+    height: 1px; /* Espessura da linha */
+    background-color: var(--linedivider-color); /* Cor da linha */
+    margin: 1px auto; /* Margem superior e inferior */
+    width: 80%; /* Largura da linha */
+}
+
+.vertical-divider {
+    width: 2px; /* Espessura da linha */
+    background-color: var(--linedivider-color); /* Cor da linha */
+    margin: 0 20px; /* Espaçamento entre as colunas */
 }
 
 .profile img {
