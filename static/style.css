@@ -20,6 +20,7 @@
     --background-image: url('/Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
+    --footer-background: url('/Images/Background/Footer_Dark_BG.png');
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -32,6 +33,7 @@
     --background-image: url('/Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
+    --footer-background: url('/Images/Background/Footer_Light_BG.svg');
 }
 
 a {
@@ -548,14 +550,66 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+/*Rodapé*/
+.footer {
+    background-image: var(--footer-background); /* Cor de fundo do rodapé */
+    color: var(--footer-text); /* Cor do texto */
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px 0;
 }
 
-footer .social-links a {
-    color: #fff;
-    margin: 0 10px;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-action h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--footer-text);
+}
+
+.footer-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--footer-text);
+}
+
+.footer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Layout 2x2 */
+    gap: 10px; /* Espaçamento entre os botões */
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-button-background);
+    color: var(--footer-button-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: var(--footer-button-hover);
+    transform: translateY(-2px);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--footer-divider-color);
+    margin: 20px 0;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: var(--footer-text);
+    margin: 0;
 }
