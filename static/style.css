@@ -47,6 +47,11 @@ body {
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evitar repetição */
     color: var(--text-color);
+
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -551,24 +556,28 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-/*Rodapé*/
-.footer {
+/*Rodapé*/.footer {
     background-image: var(--footer-background);
+    background-size: cover;
+    background-position: center;
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-action {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Alinha texto e botões horizontalmente */
-    gap: 40px; /* Espaçamento entre texto e botões */
+    justify-content: space-between;
+    gap: 40px;
     margin-bottom: 20px;
 }
 
@@ -576,19 +585,19 @@ nav ul li a {
     font-size: 28px;
     margin-bottom: 10px;
     color: var(--footer-text);
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 .footer-text p {
     font-size: 18px;
     color: var(--footer-text);
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 .footer-buttons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Layout 2x2 */
-    gap: 10px; /* Espaçamento entre os botões */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .footer-button {
