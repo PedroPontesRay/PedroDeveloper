@@ -601,16 +601,17 @@ nav ul li a {
 }
 
 .footer-button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--footer-button-background);
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    background-color: transparent; /* Fundo transparente */
     color: var(--footer-button-text);
     padding: 10px 20px;
+    border: 2px solid white; /* Borda branca */
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .footer-button:hover {
