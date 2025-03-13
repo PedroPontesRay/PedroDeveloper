@@ -7,6 +7,7 @@
     --linedivider-color: #ff0000;
     --background-transparent: rgba(255, 255, 255, 0);
     --button-selected: #313131;
+    --footer-text: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -552,8 +553,8 @@ nav ul li a {
 
 /*Rodapé*/
 .footer {
-    background-image: var(--footer-background); /* Cor de fundo do rodapé */
-    color: var(--footer-text); /* Cor do texto */
+    background-image: var(--footer-background);
+    color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
 }
@@ -563,24 +564,31 @@ nav ul li a {
     margin: 0 auto;
 }
 
-.footer-action h2 {
+.footer-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha texto e botões horizontalmente */
+    gap: 40px; /* Espaçamento entre texto e botões */
+    margin-bottom: 20px;
+}
+
+.footer-text h2 {
     font-size: 28px;
     margin-bottom: 10px;
     color: var(--footer-text);
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.footer-action p {
+.footer-text p {
     font-size: 18px;
-    margin-bottom: 20px;
     color: var(--footer-text);
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .footer-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Layout 2x2 */
     gap: 10px; /* Espaçamento entre os botões */
-    max-width: 300px;
-    margin: 0 auto;
 }
 
 .footer-button {
