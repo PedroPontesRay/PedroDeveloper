@@ -578,7 +578,7 @@ nav ul li a {
 .footer {
     position: relative;
     z-index: 1;
-    background-color: var(--footer-background);
+    background-image: var(--footer-background);
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
