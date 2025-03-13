@@ -17,6 +17,9 @@
     --card-text: #ffffff;
     --link-color: #66b3ff;
     --linedivider-color: #ffffff;
+    --background-image: url('/Images/Background/Dark_bg.svg');
+    --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
+    --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -26,6 +29,9 @@
     --card-text: #ffffff;
     --link-color: #66b3ff;
     --linedivider-color: #000000;
+    --background-image: url('/Images/Background/Light_bg.svg');
+    --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Light_Bg.svg');
+    --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
 }
 
 a {
@@ -33,7 +39,10 @@ a {
 }
 
 body {
-    background-color: var(--background-color);
+    background-image: var(--background-image); /* Caminho para o arquivo SVG */
+    background-size: cover; /* Cobrir todo o espaço do elemento */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
     color: var(--text-color);
 }
 
@@ -137,11 +146,10 @@ nav ul li a {
 }
 
 .intro-image img {
-    width: 100%;
-    max-width: 800px; /* Ajuste conforme necessário */
+    width: 30%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .intro h2 {
@@ -406,6 +414,89 @@ nav ul li a {
     transform: translateX(5px);
 }
 /*End Projects*/
+/*Shader*/
+.shaders {
+    padding: 50px 0;
+}
+
+.shaders h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+.shader-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards responsivos */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.shader-card {
+    background-image: var(--shader-unselected-card-background); /* Imagem de fundo do card */
+    background-size: cover; /* Cobrir todo o espaço do card */
+    background-position: center; /* Centralizar a imagem */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 352px; /* Largura fixa */
+    aspect-ratio: 352 / 544; /* Proporção fixa baseada na resolução desejada */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.shader-card:hover {
+    background-image: var(--shader-selected-card-background);
+    transform: translateY(-5px);
+}
+
+.shader-image img {
+    width: 90%;
+    height: auto; /* Altura fixa para a imagem */
+    border-radius: 2.5%;
+    margin-top: 5%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.shader-card h3 {
+    font-size: 22px;
+    margin: 20px 20px 10px;
+    color: var(--text-color);
+}
+
+.shader-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0 20px 20px;
+}
+
+.shader-button {
+    display: block;
+    text-align: center;
+    background-color: var(--link-color);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 20px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.shader-button:hover {
+    background-color: #005bb5; /* Cor mais escura no hover */
+}
+
+@media (max-width: 768px) {
+    .shader-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+}
+/*End Shader*/
+
 
 .custom-divider {
     height: 1px; /* Espessura da linha */
