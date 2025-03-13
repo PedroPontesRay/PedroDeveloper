@@ -21,7 +21,7 @@
     --background-image: url('/Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
-    --footer-background: url('/Images/Background/Footer_Dark_BG.png');
+    --footer-background: linear-gradient(to bottom, , transparent);;
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -558,11 +558,14 @@ nav ul li a {
 
 /*Rodapé*/
 .svg-background {
+    background-image: url("/Images/Background/Footer_bg.svg");
+    background-position: center 300px; /* Move o background para cima */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-size: cover; /* Cobrir todo o espaço */
     position: relative;
-    width: 100%;
-    height: 100vh;
     overflow: hidden;
     z-index: -1;
+    height: 100vh; /* Altura total da tela */
 }
 
 .footer-svg {
@@ -579,6 +582,7 @@ nav ul li a {
     position: relative;
     z-index: 1;
     background-image: var(--footer-background);
+    background-color: #ff000000;
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
