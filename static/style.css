@@ -45,7 +45,7 @@ body {
     background-image: var(--background-image); /* Caminho para o arquivo SVG */
     background-size: cover; /* Cobrir todo o espaço do elemento */
     background-position: center; /* Centralizar a imagem */
-    background-repeat: no-repeat; /* Evitar repetição */
+    background-repeat: repeat; /* Evitar repetição */
     color: var(--text-color);
 
     width: 100%;
@@ -556,15 +556,32 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-/*Rodapé*/.footer {
-    background-image: var(--footer-background);
-    background-size: cover;
-    background-position: center;
+/*Rodapé*/
+.svg-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.footer-svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: auto;
+    opacity: 0.5;
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+    background-color: var(--footer-background);
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
-    width: 100%;
-    margin: 0;
 }
 
 .footer-content {
@@ -603,27 +620,30 @@ nav ul li a {
 .footer-button {
     display: inline-flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre o ícone e o texto */
-    background-color: transparent; /* Fundo transparente */
+    gap: 10px;
+    background-color: transparent;
     color: var(--footer-button-text);
     padding: 10px 20px;
-    border: 2px solid white; /* Borda branca */
+    border: 2px solid white;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    box-shadow: 0 0 6px #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-.footer-button i{
-    color: #fff;
-    text-shadow: #ffffff 0px 0px 5px;
+
+.footer-button:hover {
+    background-color: white;
+    color: var(--footer-background);
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 .footer-divider {
-    height: 1px; /* Espessura da linha */
-    background-color: #fff; /* Cor da linha */
-    margin-bottom: 2%; 
-    width: 100%; /* Largura da linha */
+    width: 100%;
+    height: 1px;
+    background-color: var(--footer-divider-color);
+    margin: 20px 0;
 }
 
 .footer-copyright p {
