@@ -619,10 +619,10 @@ nav ul li a {
 }
 
 .footer-divider {
-    width: 100%;
-    height: 1px;
-    background-color: var(--footer-divider-color);
-    margin: 20px 0;
+    height: 1px; /* Espessura da linha */
+    background-color: #fff; /* Cor da linha */
+    margin-bottom: 2%; 
+    width: 100%; /* Largura da linha */
 }
 
 .footer-copyright p {
