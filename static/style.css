@@ -22,6 +22,7 @@
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
     --footer-background: linear-gradient(to bottom, , transparent);;
+    --icon-color: #ffffff;
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -35,6 +36,7 @@
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
     --footer-background: url('/Images/Background/Footer_Light_BG.svg');
+    --icon-color:#021b33;
 }
 
 a {
@@ -242,6 +244,14 @@ nav ul li a {
     gap: 15px; /* Espaçamento entre os itens */
     text-align: left; /* Alinha o texto à esquerda */
 }
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+}
+.contact-link i{
+    color: var(--icon-color);
+}
 
 .contact-grid a {
     display: flex;
@@ -253,7 +263,6 @@ nav ul li a {
     position: relative;
     transition: color 0.3s ease;
 }
-
 
 
 .contact-grid a::after {
@@ -287,21 +296,25 @@ nav ul li a {
     color: var(--header-bg);
 }
 
+
 .software-icons {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:row; /* Uma única coluna */
     gap: 15px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
 }
 
 .software-icons img {
-    width: 50px; /* Tamanho dos ícones */
-    height: 50px;
+    width: 10vh; /* Tamanho fixo para todos os ícones */
+    height: auto; /* Tamanho fixo para todos os ícones */
+    object-fit: contain; /* Mantém a proporção da imagem */
     transition: transform 0.3s ease;
 }
 
 .software-icons img:hover {
     transform: scale(1.1); /* Efeito de zoom no hover */
 }
+
 
 .soft-skills-cards {
     display: flex;
@@ -559,13 +572,14 @@ nav ul li a {
 /*Rodapé*/
 .svg-background {
     background-image: url("/Images/Background/Footer_bg.svg");
-    background-position: center 300px; /* Move o background para cima */
+    background-position: center 300px; /* Move o background para baixo */
     background-repeat: no-repeat; /* Evita repetição */
     background-size: cover; /* Cobrir todo o espaço */
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh; /* Altura total da tela */
+    z-index: -1; /* Coloca o background atrás de tudo */
 }
 
 .footer-svg {
@@ -582,7 +596,7 @@ nav ul li a {
     position: relative;
     z-index: 1;
     background-image: var(--footer-background);
-    background-color: #ff000000;
+    background-color: transparent;
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
