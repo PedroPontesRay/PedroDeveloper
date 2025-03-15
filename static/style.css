@@ -299,17 +299,16 @@ nav ul li a {
 
 .software-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Colunas responsivas */
-    gap: 8px; /* Reduzindo o espaçamento entre os ícones */
-    justify-content:flex-start; /* Centraliza os ícones horizontalmente */
-    padding: 5%; /* Reduzindo o espaçamento interno */
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas responsivas */
+    gap: 0px; /* Reduzindo o espaçamento entre os ícones */
+    justify-content:start; /* Centraliza os ícones horizontalmente */
 }
 
 .software-icons img {
     width: 100%; /* Ocupa 100% do espaço da célula */
     height: auto; /* Mantém a proporção da imagem */
-    max-width: 80px; /* Tamanho máximo dos ícones */
-    object-fit: contain; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Tamanho máximo dos ícones */
+    object-fit:scale-down; /* Mantém a proporção da imagem */
 }
 
 /* Ajustes para telas menores */
