@@ -264,10 +264,12 @@ nav ul li a {
     font-size: 16px;
     padding: 10px 0;
     transition: color 0.3s ease;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* Aplica o efeito de hover apenas ao texto (span) */
 .contact-grid a span {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
     position: relative;
 }
 
@@ -671,7 +673,6 @@ nav ul li a {
 }
 
 .footer-button:hover {
-    background-color: white;
     color: var(--footer-background);
     border-color: white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
