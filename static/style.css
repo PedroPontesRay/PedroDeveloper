@@ -23,6 +23,7 @@
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
     --footer-background: linear-gradient(to bottom, , transparent);;
     --icon-color: #ffffff;
+    --skill-card-bg: linear-gradient(to bottom, #a9cfe5, transparent);
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -37,6 +38,7 @@
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
     --footer-background: url('/Images/Background/Footer_Light_BG.svg');
     --icon-color:#021b33;
+    --skill-card-bg: #0d3d56;
 }
 
 a {
@@ -345,11 +347,11 @@ nav ul li a {
 }
 
 .skill-card {
-    background-color: var(--header-bg);
+    background: var(--skill-card-bg);
     color: var(--card-text);
     padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 3vh;
     font-weight: bold;
     text-align: center;
     display: inline-block; /* Faz o card se adaptar ao conteúdo */
@@ -357,10 +359,6 @@ nav ul li a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 /*End Habilidades*/
 
 /*Projects*/
