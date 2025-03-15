@@ -298,17 +298,41 @@ nav ul li a {
 
 
 .software-icons {
-    display: flex;
-    flex-direction:row; /* Uma única coluna */
-    gap: 15px; /* Espaçamento entre os ícones */
-    justify-content: center; /* Centraliza os ícones horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Colunas responsivas */
+    gap: 8px; /* Reduzindo o espaçamento entre os ícones */
+    justify-content:flex-start; /* Centraliza os ícones horizontalmente */
+    padding: 5%; /* Reduzindo o espaçamento interno */
 }
 
 .software-icons img {
-    width: 10vh; /* Tamanho fixo para todos os ícones */
-    height: auto; /* Tamanho fixo para todos os ícones */
+    width: 100%; /* Ocupa 100% do espaço da célula */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 80px; /* Tamanho máximo dos ícones */
     object-fit: contain; /* Mantém a proporção da imagem */
-    transition: transform 0.3s ease;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .software-icons {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas menores em telas pequenas */
+        gap: 6px; /* Espaçamento ainda menor em telas pequenas */
+    }
+
+    .software-icons img {
+        max-width: 60px; /* Tamanho menor dos ícones em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .software-icons {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Colunas ainda menores em telas muito pequenas */
+        gap: 4px; /* Espaçamento mínimo em telas muito pequenas */
+    }
+
+    .software-icons img {
+        max-width: 50px; /* Tamanho menor dos ícones em telas muito pequenas */
+    }
 }
 
 .soft-skills-cards {
