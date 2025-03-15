@@ -223,7 +223,6 @@ nav ul li a {
     line-height: 1.6;
     color: var(--text-color);
 }
-
 .contact .container {
     max-width: 1200px; /* Largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner */
@@ -244,12 +243,14 @@ nav ul li a {
     gap: 15px; /* Espaçamento entre os itens */
     text-align: left; /* Alinha o texto à esquerda */
 }
+
 .contact-link {
     display: flex;
     align-items: center;
     gap: 8px; /* Espaço entre o ícone e o texto */
 }
-.contact-link i{
+
+.contact-link i {
     color: var(--icon-color);
 }
 
@@ -260,16 +261,19 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     padding: 10px 0;
-    position: relative;
     transition: color 0.3s ease;
 }
 
+/* Aplica o efeito de hover apenas ao texto (span) */
+.contact-grid a span {
+    position: relative;
+}
 
-.contact-grid a::after {
+.contact-grid a span::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px; /* Posiciona a linha abaixo do texto */
     width: 100%;
     height: 2px;
     background-color: var(--linedivider-color);
@@ -277,8 +281,8 @@ nav ul li a {
     transition: transform 0.3s ease;
 }
 
-.contact-grid a:hover::after {
-    transform: scaleX(1);
+.contact-grid a:hover span::after {
+    transform: scaleX(1); /* Mostra a linha no hover */
 }
 
 .contact-links ul li {
