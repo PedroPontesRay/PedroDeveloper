@@ -311,11 +311,6 @@ nav ul li a {
     transition: transform 0.3s ease;
 }
 
-.software-icons img:hover {
-    transform: scale(1.1); /* Efeito de zoom no hover */
-}
-
-
 .soft-skills-cards {
     display: flex;
     flex-wrap: wrap;
