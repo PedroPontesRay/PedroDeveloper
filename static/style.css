@@ -21,11 +21,19 @@
     --background-image: url('/Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
+
     --project-unselected-card-background: url('/Images/Background/Cards/Project_Unselected_bg_Dark.svg');
     --project-selected-card-background: url('/Images/Background/Cards/Project_Selected_bg_Dark.svg');
+    --project-selected-title-card-color: #021b33;
+    --project-unselected-title-card-color: #a9cfe5;
+    --project-selected-description-card-color: #021b33;
+    --project-unselected-description-card-color: #f7f7f7;
+    
     --footer-background: linear-gradient(to bottom, , transparent);;
     --icon-color: #ffffff;
     --skill-card-bg: linear-gradient(to bottom, #a9cfe5, transparent);
+    --link-button-text-select-color: #ffffff;
+    --link-button-text-unselect-color: #ffffff;
 }
 [data-theme="light"] {
     --background-color: #ffffff;
@@ -38,11 +46,19 @@
     --background-image: url('/Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
+
     --project-unselected-card-background: url('/Images/Background/Cards/Project_Unselected_bg_Light.svg');
     --project-selected-card-background: url('/Images/Background/Cards/Project_Selected_bg_Light.svg');
+    --project-selected-title-card-color: #021b33;
+    --project-unselected-title-card-color: #12577B;
+    --project-selected-description-card-color: #021b33;
+    --project-unselected-description-card-color: #021b33;
+
     --footer-background: url('/Images/Background/Footer_Light_BG.svg');
     --icon-color:#021b33;
     --skill-card-bg: #0d3d56;
+    --link-button-text-select-color: #ffffff;
+    --link-button-text-unselect-color: #313131;
 }
 
 a {
@@ -392,6 +408,18 @@ nav ul li a {
     position: relative; /* Necessário para posicionar o pseudo-elemento */
     overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do card */
 }
+.project-card h3 {
+    color: var(--project-unselected-title-card-color);
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+.project-card:hover h3{
+    color: var(--project-selected-title-card-color);    
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+.project-card:hover p{
+    color: var(--project-selected-description-card-color);
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
 
 /* Pseudo-elemento para o background de hover */
 .project-card::before {
@@ -447,13 +475,11 @@ nav ul li a {
 .project-content h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: var(--text-color);
 }
 
 .project-content p {
     font-size: 16px;
     line-height: 1.6;
-    color: var(--text-color);
     margin-bottom: 20px;
 }
 /* Estilos para o botão */
@@ -462,7 +488,7 @@ nav ul li a {
     align-items: center;
     gap: 8px;
     background: linear-gradient(to right, var(--button-selected) 100%, transparent 0) no-repeat left / 0% 100%;
-    color: var(--header-text);
+    color: var(--link-button-text-unselect-color);
     padding: 10px 20px;
     border: 2px solid var(--linedivider-color);
     border-radius: 5px;
@@ -473,6 +499,7 @@ nav ul li a {
 }
 
 .link-button:hover {
+    color: var(--link-button-text-select-color);
     background-size: 100% 100%;
     border-color: var(--background-transparent);
 }
