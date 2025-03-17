@@ -456,7 +456,6 @@ nav ul li a {
     color: var(--text-color);
     margin-bottom: 20px;
 }
-
 /* Estilos para o botão */
 .link-button {
     display: inline-flex;
@@ -470,9 +469,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     transition: background-size 0.5s ease, color 0.3s ease, border-color 0.3s ease;
-    position: absolute; /* Posicionamento absoluto */
-    bottom: 20px; /* Distância do fundo */
-    left: 20px; /* Distância da esquerda */
     width: fit-content; /* Faz o botão ter o tamanho correspondente ao texto */
 }
 
@@ -552,28 +548,7 @@ nav ul li a {
     margin: 0 20px 20px;
 }
 
-.shader-button {
-    display: block;
-    text-align: center;
-    background-color: var(--link-color);
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 20px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
 
-.shader-button:hover {
-    background-color: #005bb5; /* Cor mais escura no hover */
-}
-
-@media (max-width: 768px) {
-    .shader-grid {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
-    }
-}
 /*End Shader*/
 
 
