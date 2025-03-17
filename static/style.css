@@ -548,6 +548,7 @@ nav ul li a {
     flex-direction: column; /* Organiza o conteúdo em coluna */
     justify-content: space-between; /* Distribui o espaço entre os elementos */
     padding: 20px; /* Espaçamento interno */
+    text-align: left; /* Alinha todo o texto à esquerda */
 }
 
 .shader-card:hover {
@@ -564,6 +565,7 @@ nav ul li a {
     width: 80%;
     box-sizing: border-box;
     justify-content: center;
+    text-align: left; /* Alinha todo o texto à esquerda */
 }
 
 .shader-image img {
@@ -578,6 +580,7 @@ nav ul li a {
     font-size: 22px;
     margin: 20px 20px 10px;
     color: var(--text-color);
+    text-align: left; /* Alinha todo o texto à esquerda */
 }
 
 .shader-card p {
@@ -585,6 +588,7 @@ nav ul li a {
     line-height: 1.6;
     color: var(--text-color);
     margin: 0 20px 20px;
+    text-align: left; /* Alinha todo o texto à esquerda */
 }
 
 
