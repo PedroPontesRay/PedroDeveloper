@@ -381,19 +381,43 @@ nav ul li a {
 
 .project-card {
     display: flex;
-    align-items: flex-start; /* Alinha o conteúdo no topo */
+    align-items: flex-start;
     gap: 40px;
     margin-bottom: 60px;
-    backdrop-filter: blur(10px);
     background-image: var(--project-unselected-card-background);
-    background-size: cover; /* Cobrir todo o espaço do card */
-    background-position: center; /* Centralizar a imagem */
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do card */
 }
-.project-card:hover {
-    transform: translateY(-5px);
+
+/* Pseudo-elemento para o background de hover */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: var(--project-selected-card-background);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease; /* Transição suave */
+    z-index: 1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+/* Efeito de hover */
+.project-card:hover::before {
+    opacity: 1; /* Torna o pseudo-elemento visível */
+}
+
+/* Garante que o conteúdo do card fique acima do pseudo-elemento */
+.project-card > * {
+    position: relative;
+    z-index: 2;
 }
 
 .project-card.reverse {
