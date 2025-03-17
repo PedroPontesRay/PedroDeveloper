@@ -21,6 +21,8 @@
     --background-image: url('/Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
+    --project-unselected-card-background: url('/Images/Background/Cards/Project_Unselected_bg_Dark.svg');
+    --project-selected-card-background: url('/Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --footer-background: linear-gradient(to bottom, , transparent);;
     --icon-color: #ffffff;
     --skill-card-bg: linear-gradient(to bottom, #a9cfe5, transparent);
@@ -36,6 +38,8 @@
     --background-image: url('/Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Light_Bg.svg');
+    --project-unselected-card-background: url('/Images/Background/Cards/Project_Unselected_bg_Light.svg');
+    --project-selected-card-background: url('/Images/Background/Cards/Project_Selected_bg_Light.svg');
     --footer-background: url('/Images/Background/Footer_Light_BG.svg');
     --icon-color:#021b33;
     --skill-card-bg: #0d3d56;
@@ -380,12 +384,16 @@ nav ul li a {
     align-items: flex-start; /* Alinha o conteúdo no topo */
     gap: 40px;
     margin-bottom: 60px;
-    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    background-image: var(--project-unselected-card-background);
+    background-size: cover; /* Cobrir todo o espaço do card */
+    background-position: center; /* Centralizar a imagem */
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    background-image: var(--project-selected-card-background);
 }
 
 .project-card.reverse {
@@ -445,6 +453,7 @@ nav ul li a {
 .link-button:hover {
     background-size: 100% 100%;
     color: #ffffff;
+    border-radius: 5px;
     border-color: var(--background-transparent);
 }
 
