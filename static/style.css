@@ -6,12 +6,12 @@
     --card-text: #ffffff;
     --link-color: #66b3ff;
     --linedivider-color: #ffffff;
-    --background-image: url('Images/Background/Dark_bg.svg');
-    --shader-unselected-card-background: url('Images/Background/Cards/Card_Un_Dark_Bg.svg');
-    --shader-selected-card-background: url('Images/Background/Cards/Card_Se_Dark_Bg.svg');
+    --background-image: url('../Images/Background/Dark_bg.svg');
+    --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
+    --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
 
-    --project-unselected-card-background: url('Images/Background/Cards/Project_Unselected_bg_Dark.svg');
-    --project-selected-card-background: url('Images/Background/Cards/Project_Selected_bg_Dark.svg');
+    --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
+    --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --project-selected-title-card-color: #021b33;
     --project-unselected-title-card-color: #a9cfe5;
     --project-selected-description-card-color: #021b33;
@@ -32,12 +32,12 @@
     --card-text: #ffffff;
     --link-color: #66b3ff;
     --linedivider-color: #ffffff;
-    --background-image: url('Images/Background/Dark_bg.svg');
-    --shader-unselected-card-background: url('Images/Background/Cards/Card_Un_Dark_Bg.svg');
-    --shader-selected-card-background: url('Images/Background/Cards/Card_Se_Dark_Bg.svg');
+    --background-image: url('../Images/Background/Dark_bg.svg');
+    --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
+    --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
 
-    --project-unselected-card-background: url('Images/Background/Cards/Project_Unselected_bg_Dark.svg');
-    --project-selected-card-background: url('Images/Background/Cards/Project_Selected_bg_Dark.svg');
+    --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
+    --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --project-selected-title-card-color: #021b33;
     --project-unselected-title-card-color: #a9cfe5;
     --project-selected-description-card-color: #021b33;
@@ -57,18 +57,18 @@
     --card-text: #ffffff;
     --link-color: #66b3ff;
     --linedivider-color: #000000;
-    --background-image: url('Images/Background/Light_bg.svg');
-    --shader-unselected-card-background: url('Images/Background/Cards/Card_Un_Light_Bg.svg');
-    --shader-selected-card-background: url('Images/Background/Cards/Card_Se_Light_Bg.svg');
+    --background-image: url('../Images/Background/Light_bg.svg');
+    --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Light_Bg.svg');
+    --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Light_Bg.svg');
 
-    --project-unselected-card-background: url('Images/Background/Cards/Project_Unselected_bg_Light.svg');
-    --project-selected-card-background: url('Images/Background/Cards/Project_Selected_bg_Light.svg');
+    --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Light.svg');
+    --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Light.svg');
     --project-selected-title-card-color: #021b33;
     --project-unselected-title-card-color: #12577B;
     --project-selected-description-card-color: #021b33;
     --project-unselected-description-card-color: #021b33;
 
-    --footer-background: url('Images/Background/Footer_Light_BG.svg');
+    --footer-background: url('../Images/Background/Footer_Light_BG.svg');
     --icon-color:#021b33;
     --skill-card-bg: #0d3d56;
     --link-button-text-select-color: #ffffff;
