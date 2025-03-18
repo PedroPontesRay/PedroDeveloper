@@ -1,13 +1,27 @@
 :root {
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --header-bg: #333333;
-    --header-text: #ffffff;
-    --link-color: #0077cc;
-    --linedivider-color: #ff0000;
-    --background-transparent: rgba(255, 255, 255, 0);
-    --button-selected: #313131;
-    --footer-text: #ffffff;
+    --background-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --header-bg: #111111;
+    --header-text: #f5f5f5;
+    --card-text: #ffffff;
+    --link-color: #66b3ff;
+    --linedivider-color: #ffffff;
+    --background-image: url('/Images/Background/Dark_bg.svg');
+    --shader-unselected-card-background: url('/Images/Background/Cards/Card_Un_Dark_Bg.svg');
+    --shader-selected-card-background: url('/Images/Background/Cards/Card_Se_Dark_Bg.svg');
+
+    --project-unselected-card-background: url('/Images/Background/Cards/Project_Unselected_bg_Dark.svg');
+    --project-selected-card-background: url('/Images/Background/Cards/Project_Selected_bg_Dark.svg');
+    --project-selected-title-card-color: #021b33;
+    --project-unselected-title-card-color: #a9cfe5;
+    --project-selected-description-card-color: #021b33;
+    --project-unselected-description-card-color: #f7f7f7;
+    
+    --footer-background: linear-gradient(to bottom, , transparent);;
+    --icon-color: #ffffff;
+    --skill-card-bg: linear-gradient(to bottom, #a9cfe5, transparent);
+    --link-button-text-select-color: #ffffff;
+    --link-button-text-unselect-color: #ffffff;
 }
 
 [data-theme="dark"] {
