@@ -519,7 +519,6 @@ nav ul li a {
     border-radius: 10px;
     display: block;
     margin: auto;
-    margin-left: 5%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
