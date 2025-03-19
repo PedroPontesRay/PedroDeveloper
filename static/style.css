@@ -5,6 +5,7 @@
     --font-reem-kufi: 'Reem Kufi', sans-serif;
     /*pra textos*/
     --font-inconsolata: 'Inconsolata', monospace;
+    --button-selected-color: #3a3636;
 }
 
 [data-theme="dark"] {
@@ -563,7 +564,7 @@ nav ul li a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(to right, var(--button-selected) 100%, transparent 0) no-repeat left / 0% 100%;
+    background: linear-gradient(to right, var(--button-selected-color) 100%, transparent 0) no-repeat left / 0% 100%;
     color: var(--link-button-text-unselect-color);
     padding: 10px 20px;
     border: 2px solid var(--linedivider-color);
