@@ -447,20 +447,23 @@ nav ul li a {
     gap: 40px;
     margin-bottom: 60px;
     background-image: var(--project-unselected-card-background);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     padding: 20px;
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-    overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do card */
+
+
+    position: relative;
+    overflow: hidden;
 }
 .project-image{
     border-radius: 10px;
+    height: 100%;
+    width: auto;
 }
 .project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 .project-card .link-button{
     display: flex;
@@ -468,18 +471,17 @@ nav ul li a {
 }
 .project-card h3 {
     color: var(--project-unselected-title-card-color);
-    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+    transition: color 0.3s ease;
 }
 .project-card:hover h3{
     color: var(--project-selected-title-card-color);    
-    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+    transition: color 0.3s ease;
 }
 .project-card:hover p{
     color: var(--project-selected-description-card-color);
-    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+    transition: color 0.3s ease;
 }
 
-/* Pseudo-elemento para o background de hover */
 .project-card::before {
     content: '';
     position: absolute;
@@ -488,27 +490,24 @@ nav ul li a {
     width: 100%;
     height: 100%;
     background-image: var(--project-selected-card-background);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.5s ease; /* Transição suave */
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-/* Efeito de hover */
 .project-card:hover::before {
-    opacity: 1; /* Torna o pseudo-elemento visível */
+    opacity: 1;
 }
 
-/* Garante que o conteúdo do card fique acima do pseudo-elemento */
 .project-card > * {
     position: relative;
     z-index: 2;
 }
 
 .project-card.reverse {
-    flex-direction: row-reverse; /* Inverte a ordem da imagem e do conteúdo */
+    flex-direction: row-reverse;
 }
-
 .project-image {
     flex: 1; /* Ocupa metade do espaço */
 }
