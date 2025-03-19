@@ -536,10 +536,14 @@ nav ul li a {
     justify-content: space-between; /* Alinha o conteúdo no topo e o botão no fundo */
     position: relative; /* Permite posicionar o botão de forma absoluta dentro dele */
     padding: 0 30px;
-    height: 90%;
+    height: 80%;
 }
 .project-content .link-button{
     width: 40%;/* Faz o botão ter o tamanho correspondente ao texto */
+    height: auto;
+    font-family: var(--font-inconsolata);
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--link-button-text-unselect-color);
 }
 .project-content h3 {
     font-family: var(--font-reem-kufi);
