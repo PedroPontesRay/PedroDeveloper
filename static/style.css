@@ -235,6 +235,13 @@ nav ul li a {
 .column {
     flex: 1; /* Cada coluna ocupa metade do espaço */
 }
+.column h3, h2{
+    font-family: var(--font-reem-kufi);
+}
+.column p, span,.skill-card{
+    font-family: var(--font-inconsolata);
+}
+
 
 .about-me h3, .contact-links h3, .hard-skills h3, .soft-skills h3 {
     font-size: 24px;
