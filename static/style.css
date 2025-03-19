@@ -255,7 +255,7 @@ nav ul li a {
 .about-me p {
     font-size: 16px;
     line-height: 1.6;
-
+    color: var(--invert-color);
 }
 .contact .container {
     max-width: 1200px; /* Largura máxima do contêiner */
@@ -342,16 +342,21 @@ nav ul li a {
 
 .software-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas responsivas */
-    gap: 0px; /* Reduzindo o espaçamento entre os ícones */
-    justify-content:start; /* Centraliza os ícones horizontalmente */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colunas maiores */
+    gap: 0; /* Sem espaçamento */
+    justify-content: start; /* Alinha os ícones à esquerda */
+    margin: 0; /* Remove margens do contêiner */
+    padding: 0; /* Remove padding do contêiner */
 }
 
 .software-icons img {
-    width: 100%; /* Ocupa 100% do espaço da célula */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Tamanho máximo dos ícones */
-    object-fit:scale-down; /* Mantém a proporção da imagem */
+    width: 100%; /* Ocupa 100% da célula */
+    height: 100%; /* Ocupa 100% da altura da célula */
+    max-width: 120px; /* Tamanho máximo dos ícones */
+    object-fit: cover; /* Preenche a célula sem distorcer */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Inclui padding na largura */
 }
 
 /* Ajustes para telas menores */
