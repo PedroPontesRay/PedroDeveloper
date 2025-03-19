@@ -754,7 +754,7 @@ nav ul li a {
 
 /*Rodapé*/
 .svg-background {
-    background-image: url("/Images/Background/Footer_bg.svg");
+    background-image: url("../Images/Background/Footer_bg.svg");
     background-position: center 300px; /* Move o background para baixo */
     background-repeat: no-repeat; /* Evita repetição */
     background-size: cover; /* Cobrir todo o espaço */
