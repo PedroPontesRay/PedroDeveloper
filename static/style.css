@@ -517,7 +517,12 @@ nav ul li a {
     max-width: 500px; /* Largura máxima da imagem */
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+    margin-left: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .project-content {
@@ -526,18 +531,21 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between; /* Alinha o conteúdo no topo e o botão no fundo */
     position: relative; /* Permite posicionar o botão de forma absoluta dentro dele */
-    padding-bottom: 60px; /* Espaço extra para o botão no fundo */
+    padding: 0 30px;
 }
 .project-content .link-button{
     width: fit-content; /* Faz o botão ter o tamanho correspondente ao texto */
 }
 .project-content h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-family: var(--font-reem-kufi);
+    font-size: 32px;
+    margin-top: 10%;
+    margin-bottom: -1%;
 }
 
 .project-content p {
-    font-size: 16px;
+    font-family: var(--font-inconsolata);
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
