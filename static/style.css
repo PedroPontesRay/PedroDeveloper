@@ -596,11 +596,29 @@ nav ul li a {
     padding: 50px 0;
 }
 
-.shaders h2 {
-    text-align: left;
-    margin-bottom: 40px;
-    font-size: 28px;
+.shader-title {
+    height: 100%;
+    width: auto;
+}
+.shader-title h2 {
+    font-family: var(--font-titillium);
+    font-weight: 1000;
+    font-size: 64px;
+
     color: var(--text-color);
+    margin-bottom: -1%;
+}
+.shader-title p{
+    font-family: var(--font-inconsolata);
+    font-weight: bolder;
+    font-size: 24px;
+
+    color: var(--invert-color);
+
+    max-width: 600px;
+    line-height: 1.6;
+    padding: 0;
+    margin-bottom: 2%;
 }
 
 .shader-grid {
@@ -699,7 +717,7 @@ nav ul li a {
     padding: 1px 0;
 }
 
-.skills h2, .shaders h2 {
+.skills h2 {
     text-align: center;
     margin-bottom: 40px;
 }
