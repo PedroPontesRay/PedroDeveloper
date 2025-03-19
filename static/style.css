@@ -531,9 +531,10 @@ nav ul li a {
     justify-content: space-between; /* Alinha o conteúdo no topo e o botão no fundo */
     position: relative; /* Permite posicionar o botão de forma absoluta dentro dele */
     padding: 0 30px;
+    height: 90%;
 }
 .project-content .link-button{
-    width: fit-content; /* Faz o botão ter o tamanho correspondente ao texto */
+    width: 40%;/* Faz o botão ter o tamanho correspondente ao texto */
 }
 .project-content h3 {
     font-family: var(--font-reem-kufi);
