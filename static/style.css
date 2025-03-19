@@ -30,6 +30,11 @@
     --project-unselected-title-card-color: #a9cfe5;
     --project-selected-description-card-color: #021b33;
     --project-unselected-description-card-color: #f7f7f7;
+ 
+    --shader-selected-title-card-color: #021b33;
+    --shader-unselected-title-card-color: #A9CFE5;
+    --shader-selected-description-card-color: #021b33;
+    --shader-unselected-description-card-color: #f7f7f7;
     
     --footer-background: linear-gradient(to bottom, , transparent);;
     --icon-color: #ffffff;
@@ -60,11 +65,16 @@
     --project-selected-description-card-color: #021b33;
     --project-unselected-description-card-color: #021b33;
 
+    --shader-selected-title-card-color: #021b33;
+    --shader-unselected-title-card-color: #12577B;
+    --shader-selected-description-card-color: #021b33;
+    --shader-unselected-description-card-color: #021b33;
+
     --footer-background: url('../Images/Background/Footer_Light_BG.svg');
     --icon-color:#021b33;
     --skill-card-bg: #0d3d56;
     --link-button-text-select-color: #ffffff;
-    --link-button-text-unselect-color: #313131;
+    --link-button-text-unselect-color: 0 0 10px transparent;
 }
 
 a {
@@ -642,22 +652,43 @@ nav ul li a {
     padding: 20px; /* Espaçamento interno */
     text-align: left; /* Alinha todo o texto à esquerda */
 }
+.shader-card h3 {
+    font-family: var(--font-titillium);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--shader-unselected-title-card-color);
+    margin: 0px 20px 10px;
+    text-align: left; /* Alinha todo o texto à esquerda */
+}
+.shader-card:hover h3{
+    color: var(--shader-selected-title-card-color);
+}
+.shader-card p {
+    font-family: var(--font-inconsolata);
+    font-size: 16px;
+    margin: 0 20px 0px;
+    text-align: left; /* Alinha todo o texto à esquerda */
+    color: var(--shader-unselected-description-card-color);
+}
+.shader-card:hover p{
+    color: var(--shader-selected-description-card-color);
+}
 
 .shader-card:hover {
     background-image: var(--shader-selected-card-background);
     transform: translateY(-5px);
 }
-
 .shader-card .link-button{
-    display: inline-flex;
-    padding: 10px 20px;
-    margin: auto;
+    display: flex;
+    margin: 0px 20px 10px;
     border-radius: 5px;
-    align-self:flex-start;
-    width: 80%;
+    align-self: flex-start;
+    width: 70%;
+    height: 10%;
     box-sizing: border-box;
-    justify-content: center;
-    text-align: left; /* Alinha todo o texto à esquerda */
+    justify-content: flex-start;
+    text-align: left;
+    text-shadow: 0 0 10px var(--link-button-text-unselect-color);
 }
 
 .shader-image img {
@@ -667,22 +698,6 @@ nav ul li a {
     margin-top: 5%;
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
 }
-
-.shader-card h3 {
-    font-size: 22px;
-    margin: 20px 20px 10px;
-    color: var(--text-color);
-    text-align: left; /* Alinha todo o texto à esquerda */
-}
-
-.shader-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-color);
-    margin: 0 20px 20px;
-    text-align: left; /* Alinha todo o texto à esquerda */
-}
-
 
 /*End Shader*/
 
