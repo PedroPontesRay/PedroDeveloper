@@ -195,6 +195,9 @@ nav ul li a {
     color: var(--text-color);
 }
 .highlight-name {
+    font-size: 36px;
+    font-weight: 1000;
+    font-family: var(--font-titillium);
     color: var(--name-color);
 }
 
