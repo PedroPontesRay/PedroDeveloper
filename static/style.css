@@ -21,6 +21,8 @@
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
     
+    --skill-card-text-color: #A9CFE5;
+    
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
     --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --project-selected-title-card-color: #021b33;
@@ -30,7 +32,7 @@
     
     --footer-background: linear-gradient(to bottom, , transparent);;
     --icon-color: #ffffff;
-    --skill-card-bg: linear-gradient(to bottom, #a9cfe5, transparent);
+    --skill-card-bg: linear-gradient(to bottom, #12577B, transparent);
     --link-button-text-select-color: #ffffff;
     --link-button-text-unselect-color: #ffffff;
 }
@@ -47,6 +49,8 @@
     --background-image: url('../Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Light_Bg.svg');
+    
+    --skill-card-text-color: #12577B;
 
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Light.svg');
     --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Light.svg');
@@ -239,6 +243,8 @@ nav ul li a {
 }
 .column h3, h2{
     font-family: var(--font-reem-kufi);
+    color: var(--skill-card-text-color);
+    font-size: 32px;
 }
 .column p, span,.skill-card{
     font-family: var(--font-inconsolata);
@@ -246,7 +252,7 @@ nav ul li a {
 }
 
 
-.about-me h3, .contact-links h3, .hard-skills h3, .soft-skills h3 {
+.contact-links h3 {
     font-size: 24px;
     margin-bottom: 20px;
     color: var(--invert-color);
@@ -405,7 +411,7 @@ nav ul li a {
 
 /*Projects*/
 .projects {
-    padding: 50px 0;
+    padding: 1px 0;
 }
 
 .projects h2 {
@@ -642,7 +648,7 @@ nav ul li a {
 }
 
 .skills, .projects, .shaders {
-    padding: 50px 0;
+    padding: 1px 0;
 }
 
 .skills h2, .projects h2, .shaders h2 {
