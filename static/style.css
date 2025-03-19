@@ -443,15 +443,28 @@ nav ul li a {
 .project-card {
     display: flex;
     align-items: flex-start;
+    aspect-ratio: 1149 / 461;
     gap: 40px;
     margin-bottom: 60px;
     background-image: var(--project-unselected-card-background);
     background-size: cover;
     background-position: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
     overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do card */
+}
+.project-image{
+    border-radius: 10px;
+}
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.project-card .link-button{
+    display: flex;
+    align-items: flex-end;
 }
 .project-card h3 {
     color: var(--project-unselected-title-card-color);
@@ -479,7 +492,6 @@ nav ul li a {
     background-position: center;
     opacity: 0; /* Inicialmente invisível */
     transition: opacity 0.5s ease; /* Transição suave */
-    z-index: 1; /* Coloca o pseudo-elemento atrás do conteúdo */
 }
 
 /* Efeito de hover */
