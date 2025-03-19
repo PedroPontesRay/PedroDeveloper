@@ -13,6 +13,7 @@
     --header-bg: #111111;
     --header-text: #f5f5f5;
     --card-text: #ffffff;
+    --invert-color:#ffffff;
     --link-color: #66b3ff;
     --name-color: #A9CFE5;
     --linedivider-color: #ffffff;
@@ -39,6 +40,7 @@
     --header-bg: #111111;
     --header-text: #000000;
     --card-text: #ffffff;
+    --invert-color:#0d3d56;
     --link-color: #66b3ff;
     --name-color: #12577B;
     --linedivider-color: #000000;
@@ -240,19 +242,20 @@ nav ul li a {
 }
 .column p, span,.skill-card{
     font-family: var(--font-inconsolata);
+    font-weight: bolder;
 }
 
 
 .about-me h3, .contact-links h3, .hard-skills h3, .soft-skills h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: var(--invert-color);
 }
 
 .about-me p {
     font-size: 16px;
     line-height: 1.6;
-    color: var(--text-color);
+
 }
 .contact .container {
     max-width: 1200px; /* Largura máxima do contêiner */
@@ -282,18 +285,21 @@ nav ul li a {
 }
 
 .contact-link i {
-    color: var(--icon-color);
+    color: var(--invert-color);
 }
 
 .contact-grid a {
     display: flex;
     align-items: center;
-    color: var(--text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 0;
     transition: color 0.3s ease;
     text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: var(--invert-color);
+}
+.contact-link i {
+    font-size: 30px;
 }
 
 /* Aplica o efeito de hover apenas ao texto (span) */
