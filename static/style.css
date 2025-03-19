@@ -635,6 +635,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards responsivos */
     gap: 20px; /* Espaçamento entre os cards */
+    margin-left: -1.5%;/*Margin para alinhar com o titulo*/
 }
 
 .shader-card {
