@@ -1,3 +1,12 @@
+:root {
+    /*pra títulos*/
+    --font-titillium: 'Titillium Web', sans-serif; 
+    /*pra subtítulos*/
+    --font-reem-kufi: 'Reem Kufi', sans-serif;
+    /*pra textos*/
+    --font-inconsolata: 'Inconsolata', monospace;
+}
+
 [data-theme="dark"] {
     --background-color: #1a1a1a;
     --text-color: #f5f5f5;
@@ -5,11 +14,12 @@
     --header-text: #f5f5f5;
     --card-text: #ffffff;
     --link-color: #66b3ff;
+    --name-color: #A9CFE5;
     --linedivider-color: #ffffff;
     --background-image: url('../Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
-
+    
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
     --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --project-selected-title-card-color: #021b33;
@@ -30,6 +40,7 @@
     --header-text: #000000;
     --card-text: #ffffff;
     --link-color: #66b3ff;
+    --name-color: #12577B;
     --linedivider-color: #000000;
     --background-image: url('../Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Light_Bg.svg');
@@ -79,11 +90,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    font-family: var(--font-titillium);
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 header nav ul {
@@ -106,10 +118,6 @@ header nav ul li a {
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: var(--link-color);
-}
-
 /* Estilo para o botão "Contato" */
 header nav ul li a.btn-contact {
     background-color: var(--link-color);
@@ -118,10 +126,11 @@ header nav ul li a.btn-contact {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
-header nav ul li a.btn-contact:hover {
-    background-color: #005bb5; /* Cor mais escura no hover */
+header footer-button{
+    height: fit-content;
+    width: 100%;
 }
+
 
 /* Ajuste para o botão de alternância de tema */
 #theme-toggle {
@@ -175,7 +184,12 @@ nav ul li a {
 .intro h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: var(--text-color);
+    font-family: var(--font-titillium);
+    font-weight: 1000;
+    color: #313131;
+}
+.highlight-name {
+    color: var(--name-color);
 }
 
 .intro-cards {
