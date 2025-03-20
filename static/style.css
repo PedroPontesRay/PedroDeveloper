@@ -6,12 +6,14 @@
     /*pra textos*/
     --font-inconsolata: 'Inconsolata', monospace;
     --button-selected-color: #3a3636;
+    --footer-divider-color: #ffffff;
 }
 
 [data-theme="dark"] {
     --background-color: #1a1a1a;
     --text-color: #ffffff;
     --header-bg: #111111;
+    --header-background: 0 0 10px transparent;
     --header-text: #f5f5f5;
     --card-text: #ffffff;
     --invert-color:#ffffff;
@@ -22,6 +24,8 @@
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
     
+    --intro-cards-text-color: #5989A3;
+
     --skill-card-text-color: #A9CFE5;
     
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
@@ -37,6 +41,7 @@
     --shader-unselected-description-card-color: #f7f7f7;
     
     --footer-background: linear-gradient(to bottom, , transparent);;
+    --footer-text: white;
     --icon-color: #ffffff;
     --skill-card-bg: linear-gradient(to bottom, #12577B, transparent);
     --link-button-text-select-color: #ffffff;
@@ -46,6 +51,7 @@
     --background-color: #ffffff;
     --text-color: #3a3636;
     --header-bg: #111111;
+    --header-background: #021B33;
     --header-text: #000000;
     --card-text: #ffffff;
     --invert-color:#0d3d56;
@@ -55,6 +61,8 @@
     --background-image: url('../Images/Background/Light_bg.svg');
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Light_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Light_Bg.svg');
+
+    --intro-cards-text-color: #0D3D56;
     
     --skill-card-text-color: #12577B;
 
@@ -71,6 +79,7 @@
     --shader-unselected-description-card-color: #021b33;
 
     --footer-background: url('../Images/Background/Footer_Light_BG.svg');
+    --footer-text: white;
     --icon-color:#021b33;
     --skill-card-bg: #0d3d56;
     --link-button-text-select-color: #ffffff;
@@ -98,30 +107,41 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 }
-
-header{
-    width: 90%;
+/* Estilos gerais do header */
+header {
     margin: 0 auto;
     padding: 20px 0;
+    background-color: var(--header-background);
 }
 
-/* Estilos para o Header */
+/* Container do header */
 header .container-header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-    font-family: var(--font-titillium);
+    color: #ffffff;
+    font-family: var(--font-inconsolata);
 }
 
+/* Título à esquerda */
 header h1 {
-    margin: 0;
-    font-size: 16px;
+    margin-inline-start: 5%;
+    font-size: 24px;
+    flex: 1; /* Ocupa o espaço disponível à esquerda */
 }
 
-header nav ul {
+/* Navegação centralizada */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; /* Ocupa o espaço central */
+}
+
+/* Lista central */
+header nav .nav-center {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -130,66 +150,44 @@ header nav ul {
     gap: 20px; /* Espaçamento entre os itens do menu */
 }
 
-header nav ul li {
-    display: inline;
+/* Lista à direita */
+header nav .nav-right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os itens */
+    flex: 1; /* Ocupa o espaço disponível à direita */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    margin-inline-end: 5%;
 }
 
+/* Estilos dos links */
 header nav ul li a {
-    color: var(--header-text);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s ease;
+    color: #fff;
 }
 
 /* Estilo para o botão "Contato" */
-header nav ul li a.btn-contact {
-    background-color: var(--link-color);
+header nav ul li a.footer-button {
     color: #fff;
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-header footer-button{
-    height: fit-content;
-    width: 100%;
-}
 
-
-/* Ajuste para o botão de alternância de tema */
+/* Botão de alternar tema */
 #theme-toggle {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
-    color: var(--header-text);
-}
-
-header nav ul li a.btn-contact {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border: 2px solid transparent;
-}
-header nav ul li a.btn-contact:hover {
-    border-color: #fff;
-}
-
-/*HEADER*/
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
     color: #fff;
-    text-decoration: none;
 }
+
 /*Intro*/
 /* Estilos para a seção Início */
 .intro {
@@ -205,14 +203,14 @@ nav ul li a {
 }
 
 .intro h2 {
-    font-size: 36px;
+    font-size: 64px;
     margin-bottom: 20px;
     font-family: var(--font-titillium);
     font-weight: 1000;
     color: var(--text-color);
 }
 .highlight-name {
-    font-size: 36px;
+    font-size: 64px;
     font-weight: 1000;
     font-family: var(--font-titillium);
     color: var(--name-color);
@@ -226,11 +224,12 @@ nav ul li a {
 }
 
 .intro-cards .card {
-    background-color: var(--header-bg);
+    background-color: var(--intro-cards-text-color);
+    font-family: var(--font-inconsolata);
     color: var(--card-text);
     padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -803,18 +802,21 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 20px;
+    padding-left: 5%;
 }
 
 .footer-text h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    font-family: var(--font-titillium);
+    font-weight: 800;
     color: var(--footer-text);
     text-align: left;
 }
 
 .footer-text p {
-    font-size: 18px;
+    font-size: 24px;
+    font-family: var(--font-reem-kufi);
+    margin: 0;
     color: var(--footer-text);
     text-align: left;
 }
@@ -838,23 +840,26 @@ nav ul li a {
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-family: var(--font-inconsolata);
+    font-weight: bold;
 }
 
 .footer-button:hover {
-    color: var(--footer-background);
+    color: var(--footer-button-text);
     border-color: white;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 .footer-divider {
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: var(--footer-divider-color);
     margin: 20px 0;
 }
 
 .footer-copyright p {
-    font-size: 14px;
+    font-size: 24px;
+    font-family: var(--font-inconsolata);
     color: var(--footer-text);
     margin: 0;
 }
