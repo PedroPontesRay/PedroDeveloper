@@ -101,8 +101,14 @@ body {
     padding: 20px 0;
 }
 
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 /* Estilos para o Header */
-header .container {
+header .container-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
