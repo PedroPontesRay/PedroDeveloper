@@ -861,3 +861,16 @@ header nav ul li a.footer-button {
     color: var(--footer-text);
     margin: 0;
 }
+
+/* Esconde os elementos inicialmente */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Começa 50px abaixo */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Quando os elementos estiverem visíveis */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0); /* Volta à posição original */
+}

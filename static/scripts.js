@@ -35,3 +35,25 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todos os elementos com a classe animate-on-scroll
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+    // Configura o IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Adiciona a classe visible
+                observer.unobserve(entry.target); // Para de observar após a animação
+            }
+        });
+    }, {
+        threshold: 0.5 // Define que 50% do elemento deve estar visível para acionar a animação
+    });
+
+    // Observa cada elemento com a classe animate-on-scroll
+    animateElements.forEach(element => {
+        observer.observe(element);
+    });
+});
