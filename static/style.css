@@ -111,7 +111,7 @@ body {
 /* Estilos gerais do header */
 header {
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: var(--header-background);
     position: fixed;
     top: 0;
@@ -197,6 +197,7 @@ header nav ul li a.footer-button {
 .intro {
     text-align: center;
     padding: 50px 0;
+    margin-top: 3%;
 }
 
 .intro-image img {
