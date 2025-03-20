@@ -113,8 +113,12 @@ header {
     margin: 0 auto;
     padding: 20px 0;
     background-color: var(--header-background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
-
 /* Container do header */
 header .container-header {
     width: 100%;
@@ -418,7 +422,7 @@ header nav ul li a.footer-button {
     color: var(--card-text);
     padding: 15px 20px;
     border-radius: 5px;
-    font-size: 2vh;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     display: inline-block; /* Faz o card se adaptar ao conteúdo */
