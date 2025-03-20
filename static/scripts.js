@@ -18,7 +18,7 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
     if (savedTheme === 'dark') {
-        themeToggle.textContent = '☀️';
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
     }
 }
 
@@ -27,11 +27,11 @@ themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeToggle.textContent = '🌙';
+        themeToggle.innerHTML = '<i class="fa-solid fa-moon" style="color: #ffffff;"></i>';
         localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggle.textContent = '☀️';
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
         localStorage.setItem('theme', 'dark');
     }
 });
