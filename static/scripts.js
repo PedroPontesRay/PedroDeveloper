@@ -1,15 +1,3 @@
-// Você pode adicionar interações JavaScript aqui, se necessário.
-// Por exemplo, rolagem suave para as seções.
-
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 // Seleciona o botão de alternância
 const themeToggle = document.getElementById('theme-toggle');
 
@@ -17,9 +5,17 @@ const themeToggle = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
-    if (savedTheme === 'dark') {
-        themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
-    }
+} else {
+    // Se não houver preferência salva, define o tema escuro como padrão
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+}
+
+// Configura o ícone do botão de alternância com base no tema atual
+if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
+} else {
+    themeToggle.innerHTML = '<i class="fa-solid fa-moon" style="color: #ffffff;"></i>';
 }
 
 // Função para alternar entre os temas
@@ -36,23 +32,31 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// Rolagem suave para as seções
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Animação ao rolar a página
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todos os elementos com a classe animate-on-scroll
     const animateElements = document.querySelectorAll('.animate-on-scroll');
 
-    // Configura o IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Adiciona a classe visible
-                observer.unobserve(entry.target); // Para de observar após a animação
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.5 // Define que 50% do elemento deve estar visível para acionar a animação
+        threshold: 0.5
     });
 
-    // Observa cada elemento com a classe animate-on-scroll
     animateElements.forEach(element => {
         observer.observe(element);
     });
