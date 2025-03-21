@@ -390,28 +390,7 @@ header nav ul li a.footer-button {
     box-sizing: border-box; /* Inclui padding na largura */
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .software-icons {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas menores em telas pequenas */
-        gap: 6px; /* Espaçamento ainda menor em telas pequenas */
-    }
 
-    .software-icons img {
-        max-width: 60px; /* Tamanho menor dos ícones em telas pequenas */
-    }
-}
-
-@media (max-width: 480px) {
-    .software-icons {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Colunas ainda menores em telas muito pequenas */
-        gap: 4px; /* Espaçamento mínimo em telas muito pequenas */
-    }
-
-    .software-icons img {
-        max-width: 50px; /* Tamanho menor dos ícones em telas muito pequenas */
-    }
-}
 
 .soft-skills-cards {
     display: flex;
@@ -867,4 +846,26 @@ header nav ul li a.footer-button {
 .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0); /* Volta à posição original */
+}
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .software-icons {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas menores em telas pequenas */
+        gap: 6px; /* Espaçamento ainda menor em telas pequenas */
+    }
+
+    .software-icons img {
+        max-width: 60px; /* Tamanho menor dos ícones em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .software-icons {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Colunas ainda menores em telas muito pequenas */
+        gap: 4px; /* Espaçamento mínimo em telas muito pequenas */
+    }
+
+    .software-icons img {
+        max-width: 50px; /* Tamanho menor dos ícones em telas muito pequenas */
+    }
 }
