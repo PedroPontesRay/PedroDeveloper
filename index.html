@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Pontes - Game Developer Tech Artist</title>
+    <title data-lang="titulo_pagina">Pedro Pontes - Game Developer Tech Artist</title>
     <link rel="stylesheet" href="static/style.css">
     <script src="https://kit.fontawesome.com/2e4ef61ab0.js" crossorigin="anonymous"></script>
     
@@ -25,19 +25,19 @@
     <!-- Header -->
     <header>
         <div class="container-header">
-            <h1>Pedro Pontes</h1>
+            <h1 data-lang="nome_titulo">Pedro Pontes</h1>
             <nav>
                 <ul class="nav-center">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#shaders">Shaders</a></li>
+                    <li><a href="#inicio" data-lang="menu_inicio">Início</a></li>
+                    <li><a href="#sobre" data-lang="menu_sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades" data-lang="menu_habilidades">Habilidades</a></li>
+                    <li><a href="#projetos" data-lang="menu_projetos">Projetos</a></li>
+                    <li><a href="#shaders" data-lang="menu_shaders">Shaders</a></li>
                 </ul>
                 <ul class="nav-right">
                     <li><button id="theme-toggle"><i class="fa-solid fa-moon" style="color: #ffffff;"></i></button></li>
                     <li><button class="button-language" id="languageToggle" value="en"><img id="language-icon" src="Images/Icons/Icon-Eng.svg" alt="Icon-Eng"></button></li>
-                    <li><a href="#contato" class="footer-button">Contato</a></li>
+                    <li><a href="#contato" class="footer-button" data-lang="menu_contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,10 +49,10 @@
             <div class="intro-image">
                 <img src="Images/PFP.png" alt="Pedro Pontes">
             </div>
-            <h2>OLÁ, EU SOU <span class="highlight-name">PEDRO PONTES</span></h2>
+            <h2 data-lang="introducao_titulo">OLÁ, EU SOU <span class="highlight-name" data-lang="nome_destaque">PEDRO PONTES</span></h2>
             <div class="intro-cards">
-                <div class="card">Game Dev.</div>
-                <div class="card">Tech Artist</div>
+                <div class="card" data-lang="card_game_dev">Game Dev.</div>
+                <div class="card" data-lang="card_tech_artist">Tech Artist</div>
             </div>
         </div>
     </section>
@@ -66,8 +66,8 @@
                 <!-- Primeira Coluna: Sobre Mim e Links de Contato -->
                 <div class="column">
                     <div class="about-me" id="sobre">
-                        <h3 data-lang="sobre_mim">Sobre Mim aaa</h3>
-                        <p>
+                        <h3 data-lang="sobre_mim_titulo">Sobre Mim</h3>
+                        <p data-lang="sobre_mim_texto">
                             Sou um Tech Artist especializado em desenvolvimento de jogos, com foco em criação de shaders, efeitos visuais e integração de arte técnica em engines como Unity e Unreal. Combinando arte e programação, busco elevar a experiência visual dos jogos.
                         </p>
                     </div>
@@ -75,22 +75,22 @@
                         <div class="container">
                             <div class="contact-grid">
                                 <a href="mailto:pedrohenripn@gmail.com" class="contact-link">
-                                    <i class="fa-solid fa-envelope"></i> <span>E-mail</span>
+                                    <i class="fa-solid fa-envelope"></i> <span data-lang="contato_email">E-mail</span>
                                 </a>
                                 <a href="https://www.artstation.com/pedrohenrique12" class="contact-link" target="_blank">
-                                    <i class="fa-brands fa-artstation"></i> <span>ArtStation</span>
+                                    <i class="fa-brands fa-artstation"></i> <span data-lang="contato_artstation">ArtStation</span>
                                 </a>
                                 <a href="https://www.linkedin.com/in/pedro-pontes-b80784176/" class="contact-link" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+                                    <i class="fa-brands fa-linkedin-in"></i> <span data-lang="contato_linkedin">LinkedIn</span>
                                 </a>
                                 <a href="https://behance.net/pedro-pontes" class="contact-link" target="_blank">
-                                    <i class="fa-brands fa-behance"></i> <span>Behance</span>
+                                    <i class="fa-brands fa-behance"></i> <span data-lang="contato_behance">Behance</span>
                                 </a>
                                 <a href="https://github.com/PedroPontesRay" class="contact-link" target="_blank">
-                                    <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                                    <i class="fa-brands fa-github"></i> <span data-lang="contato_github">GitHub</span>
                                 </a>
                                 <a class="contact-link">
-                                    <i class="fa-solid fa-phone"></i> <span>(+55) 11 99752-6474</span>
+                                    <i class="fa-solid fa-phone"></i> <span data-lang="contato_telefone">(+55) 11 99752-6474</span>
                                 </a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                 <!-- Segunda Coluna: Hard Skills e Soft Skills -->
                 <div class="column">
                     <div class="hard-skills">
-                        <h3>Hard Skills</h3>
+                        <h3 data-lang="hard_skills_titulo">Hard Skills</h3>
                         <div class="software-icons">
                             <img src="Images/Icons/Unity.svg" alt="Unity" title="Unity">
                             <img src="Images/Icons/Unreal.svg" alt="Unreal Engine" title="Unreal Engine">
@@ -115,13 +115,13 @@
                         </div>
                     </div>
                     <div class="soft-skills">
-                        <h3>Soft Skills</h3>
+                        <h3 data-lang="soft_skills_titulo">Soft Skills</h3>
                         <div class="soft-skills-cards">
-                            <div class="skill-card">Gestão de Tempo</div>
-                            <div class="skill-card">Adaptabilidade</div>
-                            <div class="skill-card">Comunicação Eficaz</div>
-                            <div class="skill-card">Trabalho em Equipe</div>
-                            <div class="skill-card">Resolução de Problemas</div>
+                            <div class="skill-card" data-lang="soft_skill_1">Gestão de Tempo</div>
+                            <div class="skill-card" data-lang="soft_skill_2">Adaptabilidade</div>
+                            <div class="skill-card" data-lang="soft_skill_3">Comunicação Eficaz</div>
+                            <div class="skill-card" data-lang="soft_skill_4">Trabalho em Equipe</div>
+                            <div class="skill-card" data-lang="soft_skill_5">Resolução de Problemas</div>
                         </div>
                     </div>
                 </div>
@@ -133,20 +133,20 @@
     <section id="projetos" class="projects animate-on-scroll">
         <div class="container">
             <div class="project-title">
-                <h2>PROJETOS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 data-lang="projetos_titulo">PROJETOS</h2>
+                <p data-lang="projetos_subtitulo">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="project-card reverse">
                 <div class="project-image">
                     <img src="Images/Placeholder/Quadrada.png" alt="Kids Coloring Book">
                 </div>
                 <div class="project-content">
-                    <h3>Kids Coloring Book and Drawing
-                        <p>Um jogo de colorir que fiz como freelancer em 2024.</p>
+                    <h3 data-lang="projeto_1_titulo">Kids Coloring Book and Drawing
+                        <p data-lang="projeto_1_descricao">Um jogo de colorir que fiz como freelancer em 2024.</p>
                     </h3>
                     
                     <a href="#" class="link-button">
-                        Ver Projeto
+                        <span data-lang="botao_ver_projeto">Ver Projeto</span>
                         <span class="arrow">→</span>
                     </a>
                 </div>
@@ -156,17 +156,16 @@
                     <img src="Images/Placeholder/Quadrada.png" alt="Toy Defense">
                 </div>
                 <div class="project-content">
-                    <h3>Toy Defense 
-                        <p>Jogo Tower Defense feito inteiramente na Unity.</p>
+                    <h3 data-lang="projeto_2_titulo">Toy Defense 
+                        <p data-lang="projeto_2_descricao">Jogo Tower Defense feito inteiramente na Unity.</p>
                     </h3>
                     
                     <a href="#" class="link-button">
-                        Ver Projeto
+                        <span data-lang="botao_ver_projeto">Ver Projeto</span>
                         <span class="arrow">→</span>
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -174,8 +173,8 @@
     <section id="shaders" class="shaders animate-on-scroll">
         <div class="container">
             <div class="shader-title">
-                <h2>SHADER</h2>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 data-lang="shaders_titulo">SHADER</h2>
+                <p data-lang="shaders_subtitulo">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="shader-grid">
                 <!-- Card 1 -->
@@ -183,10 +182,10 @@
                     <div class="shader-image">
                         <img src="Images/Placeholder/Penguin.png" alt="Shader 1">
                     </div>
-                    <h3>Nome do Shader 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
+                    <h3 data-lang="shader_1_titulo">Nome do Shader 1</h3>
+                    <p data-lang="shader_1_descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
                     <a href="https://github.com/link-para-shader1" class="link-button" target="_blank">
-                        Ver no GitHub
+                        <span data-lang="botao_ver_github">Ver no GitHub</span>
                         <span class="arrow">→</span>
                     </a>
                 </div>
@@ -196,10 +195,10 @@
                     <div class="shader-image">
                         <img src="Images/Placeholder/Penguin.png" alt="Shader 2">
                     </div>
-                    <h3>Nome do Shader 2</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
+                    <h3 data-lang="shader_2_titulo">Nome do Shader 2</h3>
+                    <p data-lang="shader_2_descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
                     <a href="https://github.com/link-para-shader2" class="link-button" target="_blank">
-                        Ver no GitHub
+                        <span data-lang="botao_ver_github">Ver no GitHub</span>
                         <span class="arrow">→</span>
                     </a>
                 </div>
@@ -208,14 +207,13 @@
                     <div class="shader-image">
                         <img src="Images/Placeholder/Penguin.png" alt="Shader 2">
                     </div>
-                    <h3>Nome do Shader 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
+                    <h3 data-lang="shader_3_titulo">Nome do Shader 3</h3>
+                    <p data-lang="shader_3_descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.</p>
                     <a href="https://github.com/link-para-shader2" class="link-button" target="_blank">
-                        Ver no GitHub
+                        <span data-lang="botao_ver_github">Ver no GitHub</span>
                         <span class="arrow">→</span>
                     </a>
                 </div>
-                <!-- Adicione mais cards conforme necessário -->
             </div>
         </div>
     </section>
@@ -226,22 +224,22 @@
             <!-- Texto e Botões -->
             <div class="footer-action">
                 <div class="footer-text">
-                    <h2>VAMOS TRABALHAR EM
-                        <p>um projeto juntos!</p>
+                    <h2 data-lang="rodape_titulo">VAMOS TRABALHAR EM
+                        <p data-lang="rodape_subtitulo">um projeto juntos!</p>
                     </h2>
                 </div>
                 <div class="footer-buttons">
                     <a href="https://www.linkedin.com/in/pedro-pontes-b80784176/" target="_blank" class="footer-button">
-                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i> LinkedIn
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i> <span data-lang="botao_linkedin">LinkedIn</span>
                     </a>
                     <a href="https://github.com/PedroPontesRay" target="_blank" class="footer-button">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>GitHub
+                        <i class="fa-brands fa-github" style="color: #ffffff;"></i><span data-lang="botao_github">GitHub</span>
                     </a>
                     <a href="https://www.artstation.com/pedrohenrique12" target="_blank" class="footer-button">
-                        <i class="fa-brands fa-artstation" style="color: #ffffff;"></i>ArtStation
+                        <i class="fa-brands fa-artstation" style="color: #ffffff;"></i><span data-lang="botao_artstation">ArtStation</span>
                     </a>
                     <a href="" target="_blank" class="footer-button">
-                        <i class="fa-brands fa-behance" style="color: #ffffff;"></i>Behance
+                        <i class="fa-brands fa-behance" style="color: #ffffff;"></i><span data-lang="botao_behance">Behance</span>
                     </a>
                 </div>
             </div>
@@ -251,7 +249,7 @@
             
             <!-- Texto de Direitos Autorais -->
             <div class="footer-copyright">
-                <p>© 2025 Pedro Henrique. Todos os direitos reservados.</p>
+                <p data-lang="rodape_direitos">© 2025 Pedro Henrique. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
