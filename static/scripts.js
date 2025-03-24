@@ -97,10 +97,142 @@ languageToggleButton.addEventListener("click", languageIconToggle);
 
 const translations = {
     pt: {
-        sobre_mim: "Sobre Mim"
+        // Header
+        nome_titulo: "Pedro Pontes",
+        menu_inicio: "Início",
+        menu_sobre: "Sobre Mim",
+        menu_habilidades: "Habilidades",
+        menu_projetos: "Projetos",
+        menu_shaders: "Shaders",
+        menu_contato: "Contato",
+        
+        // Introdução
+        introducao_titulo: "OLÁ, EU SOU",
+        nome_destaque: "PEDRO PONTES",
+        card_game_dev: "Game Dev.",
+        card_tech_artist: "Tech Artist",
+        
+        // Sobre Mim
+        sobre_mim_titulo: "Sobre Mim",
+        sobre_mim_texto: "Sou um Tech Artist especializado em desenvolvimento de jogos, com foco em criação de shaders, efeitos visuais e integração de arte técnica em engines como Unity e Unreal. Combinando arte e programação, busco elevar a experiência visual dos jogos.",
+        
+        // Contato
+        contato_email: "E-mail",
+        contato_artstation: "ArtStation",
+        contato_linkedin: "LinkedIn",
+        contato_behance: "Behance",
+        contato_github: "GitHub",
+        contato_telefone: "(+55) 11 99752-6474",
+        
+        // Habilidades
+        hard_skills_titulo: "Hard Skills",
+        soft_skills_titulo: "Soft Skills",
+        soft_skill_1: "Gestão de Tempo",
+        soft_skill_2: "Adaptabilidade",
+        soft_skill_3: "Comunicação Eficaz",
+        soft_skill_4: "Trabalho em Equipe",
+        soft_skill_5: "Resolução de Problemas",
+        
+        // Projetos
+        projetos_titulo: "PROJETOS",
+        projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        projeto_1_titulo: "Kids Coloring Book and Drawing",
+        projeto_1_descricao: "Um jogo de colorir que fiz como freelancer em 2024.",
+        projeto_2_titulo: "Toy Defense",
+        projeto_2_descricao: "Jogo Tower Defense feito inteiramente na Unity.",
+        botao_ver_projeto: "Ver Projeto",
+        
+        // Shaders
+        shaders_titulo: "SHADER",
+        shaders_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        shader_1_titulo: "Nome do Shader 1",
+        shader_1_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shader_2_titulo: "Nome do Shader 2",
+        shader_2_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shader_3_titulo: "Nome do Shader 3",
+        shader_3_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        botao_ver_github: "Ver no GitHub",
+        
+        // Rodapé
+        rodape_titulo: "VAMOS TRABALHAR EM",
+        rodape_subtitulo: "um projeto juntos!",
+        botao_linkedin: "LinkedIn",
+        botao_github: "GitHub",
+        botao_artstation: "ArtStation",
+        botao_behance: "Behance",
+        rodape_direitos: "© 2025 Pedro Henrique. Todos os direitos reservados.",
+        
+        // Título da página
+        titulo_pagina: "Pedro Pontes - Game Developer Tech Artist"
     },
     en: {
-        sobre_mim: "About me" 
+        // Header
+        nome_titulo: "Pedro Pontes",
+        menu_inicio: "Home",
+        menu_sobre: "About Me",
+        menu_habilidades: "Skills",
+        menu_projetos: "Projects",
+        menu_shaders: "Shaders",
+        menu_contato: "Contact",
+        
+        // Introdução
+        introducao_titulo: "HI, I'M",
+        nome_destaque: "PEDRO PONTES",
+        card_game_dev: "Game Dev.",
+        card_tech_artist: "Tech Artist",
+        
+        // Sobre Mim
+        sobre_mim_titulo: "About Me",
+        sobre_mim_texto: "I'm a Tech Artist specialized in game development, focused on shader creation, visual effects and technical art integration in engines like Unity and Unreal. Combining art and programming, I aim to elevate the visual experience of games.",
+        
+        // Contato
+        contato_email: "Email",
+        contato_artstation: "ArtStation",
+        contato_linkedin: "LinkedIn",
+        contato_behance: "Behance",
+        contato_github: "GitHub",
+        contato_telefone: "(+55) 11 99752-6474",
+        
+        // Habilidades
+        hard_skills_titulo: "Hard Skills",
+        soft_skills_titulo: "Soft Skills",
+        soft_skill_1: "Time Management",
+        soft_skill_2: "Adaptability",
+        soft_skill_3: "Effective Communication",
+        soft_skill_4: "Teamwork",
+        soft_skill_5: "Problem Solving",
+        
+        // Projetos
+        projetos_titulo: "PROJECTS",
+        projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        projeto_1_titulo: "Kids Coloring Book and Drawing",
+        projeto_1_descricao: "A coloring game I made as a freelancer in 2024.",
+        projeto_2_titulo: "Toy Defense",
+        projeto_2_descricao: "Tower Defense game made entirely in Unity.",
+        botao_ver_projeto: "View Project",
+        
+        // Shaders
+        shaders_titulo: "SHADER",
+        shaders_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        shader_1_titulo: "Shader Name 1",
+        shader_1_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shader_2_titulo: "Shader Name 2",
+        shader_2_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shader_3_titulo: "Shader Name 3",
+        shader_3_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        botao_ver_github: "View on GitHub",
+        
+        // Rodapé
+        rodape_titulo: "LET'S WORK ON",
+        rodape_subtitulo: "a project together!",
+        botao_linkedin: "LinkedIn",
+        botao_github: "GitHub",
+        botao_artstation: "ArtStation",
+        botao_behance: "Behance",
+        rodape_direitos: "© 2025 Pedro Henrique. All rights reserved.",
+        
+        // Título da página
+        titulo_pagina: "Pedro Pontes - Game Developer Tech Artist"
     }
 };
 
