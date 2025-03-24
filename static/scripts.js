@@ -68,7 +68,9 @@ const languageicons = [
 ];
 let currentId = 0;
 
-async function languageToggle() {
+const languageToggleButton = document.getElementById("languageToggle");
+
+async function languageIconToggle() {
     const image = document.getElementById("language-icon");
     
     // Adiciona classe para fade-out
@@ -91,4 +93,45 @@ async function languageToggle() {
     }, 100);
 }
 
-document.getElementById("languageToggle").addEventListener("click", languageToggle);
+languageToggleButton.addEventListener("click", languageIconToggle);
+
+const translations = {
+    pt: {
+        sobre_mim: "Sobre Mim"
+    },
+    en: {
+        sobre_mim: "About me" 
+    }
+};
+
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll("[data-lang]");
+    elements.forEach(element => {
+        const key = element.getAttribute("data-lang");
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    // Atualiza o atributo lang do HTML
+    document.documentElement.lang = lang;
+}
+
+// Carrega o idioma salvo ou o padrão (pt) ao iniciar
+const savedLang = localStorage.getItem("language") || "pt";
+changeLanguage(savedLang);
+
+function toggleLanguage() {
+    const currentLang = document.documentElement.lang || 'pt';
+    const newLang = currentLang === 'pt' ? 'en' : 'pt'; // Alterna entre pt e en
+    
+    changeLanguage(newLang);
+    
+    // Opcional: salvar preferência
+    localStorage.setItem('language', newLang);
+    
+    return newLang; // Retorna o novo idioma
+}
+
+// Modificação principal: corrige o event listener do botão
+languageToggleButton.addEventListener("click", toggleLanguage);
+
