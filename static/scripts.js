@@ -140,6 +140,8 @@ const translations = {
         projeto_1_descricao: "Desenvolvi um jogo educativo em Unity com sistemas de menus, seleção de cores e ferramentas de pintura (pincéis, glitter, texturas). Implementei um plugin de pintura com touch/mouse, salvamento de arte (JSON) e compartilhamento. Otimizei para mobile e desktop, adicionando feedbacks visuais e sonoros. Tecnologias: C#, Unity UI, Shaders, DOTween. Foco em usabilidade infantil e criatividade.",
         projeto_2_titulo: "Toy Defense",
         projeto_2_descricao: "Como projeto de faculdade, desenvolvi um sistema completo de animação de menus no Unity, criando transições fluidas e interativas entre telas. No Maya, trabalhei na animação de personagens, explorando técnicas profissionais para alcançar movimentos expressivos e naturais. Este projeto, concluído em menos de seis meses, foi premiado como o melhor do curso, destacando-se pela qualidade técnica e aplicação criativa dos princípios de animação.",
+        projeto_3_titulo: "Sokowinter",
+        projeto_3_descricao: "Em apenas 2 meses, executei com sucesso o porte completo deste puzzle game no estilo Sokoban para Nintendo Switch, PS4 e Xbox One. Desenvolvi sistemas de salvamento multiplataforma, adaptei os controles incluindo funcionalidade touch exclusiva para o Switch, e implementei trophies/achievements para as plataformas da Sony e Microsoft. Aprendi e apliquei o novo sistema de input da Unity durante o processo, garantindo uma experiência de jogo consistente e otimizada em todas as plataformas, superando os desafios técnicos específicos de cada console dentro do curto prazo estabelecido.",
         botao_ver_projeto: "Ver Projeto",
         
         // Shaders
@@ -209,6 +211,8 @@ const translations = {
         projeto_1_descricao: "Developed an educational Unity game featuring dynamic menus, color selection, and painting tools (brushes, glitter, textures). Integrated a touch/mouse painting plugin with artwork saving (JSON) and sharing. Optimized for mobile and desktop with visual/audio feedback. Tech stack: C#, Unity UI, Shaders, DOTween. Focused on child-friendly usability and creativity.",
         projeto_2_titulo: "Toy Defense",
         projeto_2_descricao: "As a college project, I developed a complete menu animation system in Unity, creating fluid and interactive screen transitions. In Maya, I worked on character animation, exploring professional techniques to achieve expressive, natural movements. Completed in under six months, this project earned recognition as the best in the course for its technical quality and creative application of animation principles.",
+        projeto_3_titulo: "Sokowinter",
+        projeto_3_descricao: "In just 2 months, I successfully completed the full console port of this Sokoban-style puzzle game to Nintendo Switch, PS4 and Xbox One. Developed cross-platform save systems, adapted controls including Switch-exclusive touch functionality, and implemented trophy/achievement systems for Sony and Microsoft platforms. Learned and applied Unity's new input system during the process, ensuring consistent and optimized gameplay experience across all platforms while overcoming console-specific technical challenges within the tight deadline.",
         botao_ver_projeto: "View Project",
         
         // Shaders
