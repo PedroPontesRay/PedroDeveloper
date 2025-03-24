@@ -191,6 +191,14 @@ header nav ul li a.footer-button {
     color: #fff;
     transition: color 0.3s ease;
 }
+#language-icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#language-icon.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+}
 
 /* Botão de alternar tema */
 #theme-toggle {
@@ -201,6 +209,7 @@ header nav ul li a.footer-button {
     color: #fff;
     transition: transform 0.3s ease;
 }
+
 /*Intro*/
 /* Estilos para a seção Início */
 .intro {
