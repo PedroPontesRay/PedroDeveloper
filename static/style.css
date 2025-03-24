@@ -232,6 +232,13 @@ header nav ul li a.footer-button {
     font-weight: 1000;
     color: var(--text-color);
 }
+.before-highlight-name{
+    font-size: 64px;
+    margin-bottom: 20px;
+    font-family: var(--font-titillium);
+    font-weight: 1000;
+    color: var(--text-color);
+}
 .highlight-name {
     font-size: 64px;
     font-weight: 1000;
