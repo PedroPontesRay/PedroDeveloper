@@ -6,16 +6,19 @@
     <title>Pedro Pontes - Game Developer Tech Artist</title>
     <link rel="stylesheet" href="static/style.css">
     <script src="https://kit.fontawesome.com/2e4ef61ab0.js" crossorigin="anonymous"></script>
+    
     <!-- Fontes Titillium Web -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
     <!-- Fontes  Reem Kufi -->
     <link href="https://fonts.cdnfonts.com/css/reem-kufi" rel="stylesheet">
+    
     <!-- Fontes  Reem Kufi -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -32,9 +35,8 @@
                     <li><a href="#shaders">Shaders</a></li>
                 </ul>
                 <ul class="nav-right">
-                    <button id="theme-toggle">
-                        <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
-                    </button>
+                    <li><button id="theme-toggle"><i class="fa-solid fa-moon" style="color: #ffffff;"></i></button></li>
+                    <li><button class="button-language" id="languageToggle"><img id="language-icon" src="Images/Icons/Icon-Eng.svg" alt="Icon-Eng"></button></li>
                     <li><a href="#contato" class="footer-button">Contato</a></li>
                 </ul>
             </nav>
@@ -64,7 +66,7 @@
                 <!-- Primeira Coluna: Sobre Mim e Links de Contato -->
                 <div class="column">
                     <div class="about-me" id="sobre">
-                        <h3>Sobre Mim</h3>
+                        <h3 data-lang="sobre_mim">Sobre Mim</h3>
                         <p>
                             Sou um Tech Artist especializado em desenvolvimento de jogos, com foco em criação de shaders, efeitos visuais e integração de arte técnica em engines como Unity e Unreal. Combinando arte e programação, busco elevar a experiência visual dos jogos.
                         </p>
@@ -72,7 +74,7 @@
                     <section id="contato" class="contact">
                         <div class="container">
                             <div class="contact-grid">
-                                <a href="mailto:pedro@example.com" class="contact-link">
+                                <a href="mailto:pedrohenripn@gmail.com" class="contact-link">
                                     <i class="fa-solid fa-envelope"></i> <span>E-mail</span>
                                 </a>
                                 <a href="https://www.artstation.com/pedrohenrique12" class="contact-link" target="_blank">

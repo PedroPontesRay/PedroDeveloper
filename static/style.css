@@ -183,6 +183,14 @@ header nav ul li a.footer-button {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+.button-language {
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
 
 /* Botão de alternar tema */
 #theme-toggle {
@@ -856,6 +864,25 @@ header nav ul li a.footer-button {
 
     .software-icons img {
         max-width: 60px; /* Tamanho menor dos ícones em telas pequenas */
+    }
+}
+
+@media (max-width: 375px) {
+    body,html{
+        overflow-x: hidden;
+    }
+    .container {
+        width: 100%;
+        padding: 10px; /* Reduza o padding para evitar transbordamento */
+        box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    }
+    .about-me {
+        flex-direction: column; /* Coloque os elementos em coluna em telas pequenas */
+    }
+
+
+    .vertical-divider {
+        display: none; /* Remove o divisor vertical em telas pequenas */
     }
 }
 
