@@ -137,9 +137,9 @@ const translations = {
         projetos_titulo: "PROJETOS",
         projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
         projeto_1_titulo: "Kids Coloring Book and Drawing",
-        projeto_1_descricao: "Um jogo de colorir que fiz como freelancer em 2024.",
+        projeto_1_descricao: "Desenvolvi um jogo educativo em Unity com sistemas de menus, seleção de cores e ferramentas de pintura (pincéis, glitter, texturas). Implementei um plugin de pintura com touch/mouse, salvamento de arte (JSON) e compartilhamento. Otimizei para mobile e desktop, adicionando feedbacks visuais e sonoros. Tecnologias: C#, Unity UI, Shaders, DOTween. Foco em usabilidade infantil e criatividade.",
         projeto_2_titulo: "Toy Defense",
-        projeto_2_descricao: "Jogo Tower Defense feito inteiramente na Unity.",
+        projeto_2_descricao: "Como projeto de faculdade, desenvolvi um sistema completo de animação de menus no Unity, criando transições fluidas e interativas entre telas. No Maya, trabalhei na animação de personagens, explorando técnicas profissionais para alcançar movimentos expressivos e naturais. Este projeto, concluído em menos de seis meses, foi premiado como o melhor do curso, destacando-se pela qualidade técnica e aplicação criativa dos princípios de animação.",
         botao_ver_projeto: "Ver Projeto",
         
         // Shaders
@@ -206,9 +206,9 @@ const translations = {
         projetos_titulo: "PROJECTS",
         projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
         projeto_1_titulo: "Kids Coloring Book and Drawing",
-        projeto_1_descricao: "A coloring game I made as a freelancer in 2024.",
+        projeto_1_descricao: "Developed an educational Unity game featuring dynamic menus, color selection, and painting tools (brushes, glitter, textures). Integrated a touch/mouse painting plugin with artwork saving (JSON) and sharing. Optimized for mobile and desktop with visual/audio feedback. Tech stack: C#, Unity UI, Shaders, DOTween. Focused on child-friendly usability and creativity.",
         projeto_2_titulo: "Toy Defense",
-        projeto_2_descricao: "Tower Defense game made entirely in Unity.",
+        projeto_2_descricao: "As a college project, I developed a complete menu animation system in Unity, creating fluid and interactive screen transitions. In Maya, I worked on character animation, exploring professional techniques to achieve expressive, natural movements. Completed in under six months, this project earned recognition as the best in the course for its technical quality and creative application of animation principles.",
         botao_ver_projeto: "View Project",
         
         // Shaders
