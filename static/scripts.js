@@ -76,12 +76,28 @@ function languageToggle(){
 
 
 const translations = {
-    pt:{
-        sobre_mim:"Sobre Mim"
+    pt: {
+        sobre_mim: "Sobre Mim"
     },
-    en:{
-        sobre_mim:"About me" 
+    en: {
+        sobre_mim: "About me" 
     }
+};
+
+// Carrega o idioma salvo ou usa um padrão
+function loadLanguage() {
+    const savedLang = localStorage.getItem("language") || "pt";
+    changeLanguage(savedLang);
+    
+    // Marca o botão do idioma atual como selecionado
+    const buttons = document.querySelectorAll(".language-btn");
+    buttons.forEach(btn => {
+        if (btn.value === savedLang) {
+            btn.classList.add("active");
+        } else {
+            btn.classList.remove("active");
+        }
+    });
 }
 
 function changeLanguage(lang) {
@@ -92,15 +108,16 @@ function changeLanguage(lang) {
             element.textContent = translations[lang][key];
         }
     });
-    console.log("changeLanguage");
 }
 
-
-
-document.getElementById("languageToggle").addEventListener("click", function (e) {
-    const selectedLang = e.target.value;
-    changeLanguage(selectedLang);
-    localStorage.setItem("language", selectedLang); // Salva a preferência
+// Adiciona evento aos botões de idioma
+document.querySelectorAll(".language-btn").forEach(button => {
+    button.addEventListener("click", function(e) {
+        const selectedLang = this.value;
+        changeLanguage(selectedLang);
+        localStorage.setItem("language", selectedLang);
+        loadLanguage(); // Atualiza a UI
+    });
 });
 
 // Carrega o idioma salvo ou o padrão (pt)
