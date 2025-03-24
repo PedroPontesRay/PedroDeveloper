@@ -618,6 +618,7 @@ header nav ul li a.footer-button {
 /*Shader*/
 .shaders {
     padding: 50px 0;
+    margin-bottom: 50px;
     background-image: url("../Images/Background/Footer_bg.svg");
     background-position: center 300px; /* Move o background para baixo */
     background-repeat: no-repeat; /* Evita repetição */
@@ -627,6 +628,9 @@ header nav ul li a.footer-button {
     width: 100%;
     height: 100vh; /* Altura total da tela */
     z-index: -1; /* Coloca o background atrás de tudo */
+}
+.shaders, .shaders * {
+    box-sizing: border-box;
 }
 
 .shader-title {
@@ -659,6 +663,11 @@ header nav ul li a.footer-button {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards responsivos */
     gap: 20px; /* Espaçamento entre os cards */
     margin-left: -1.5%;/*Margin para alinhar com o titulo*/
+}
+.shader-grid::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .shader-card {
@@ -778,12 +787,13 @@ header nav ul li a.footer-button {
 
 .footer {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-image: var(--footer-background);
     background-color: transparent;
     color: var(--footer-text);
     padding: 40px 20px;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer-content {
