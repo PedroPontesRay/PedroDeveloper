@@ -142,6 +142,8 @@ const translations = {
         projeto_2_descricao: "Como projeto de faculdade, desenvolvi um sistema completo de animação de menus no Unity, criando transições fluidas e interativas entre telas. No Maya, trabalhei na animação de personagens, explorando técnicas profissionais para alcançar movimentos expressivos e naturais. Este projeto, concluído em menos de seis meses, foi premiado como o melhor do curso, destacando-se pela qualidade técnica e aplicação criativa dos princípios de animação.",
         projeto_3_titulo: "Sokowinter",
         projeto_3_descricao: "Em apenas 2 meses, executei com sucesso o porte completo deste puzzle game no estilo Sokoban para Nintendo Switch, PS4 e Xbox One. Desenvolvi sistemas de salvamento multiplataforma, adaptei os controles incluindo funcionalidade touch exclusiva para o Switch, e implementei trophies/achievements para as plataformas da Sony e Microsoft. Aprendi e apliquei o novo sistema de input da Unity durante o processo, garantindo uma experiência de jogo consistente e otimizada em todas as plataformas, superando os desafios técnicos específicos de cada console dentro do curto prazo estabelecido.",
+        projeto_4_titulo: "Astrea: Six-Sided Oracles",
+        projeto_4_descricao: "Finalizei o porte para Xbox One, com foco em otimização de performance e implementação de achievements. Atualmente trabalho na versão mobile, desenvolvendo ferramentas para melhoria de performance e integrando APIs nativas do Android no processo de porting.",
         botao_ver_projeto: "Ver Projeto",
         
         // Shaders
@@ -213,6 +215,8 @@ const translations = {
         projeto_2_descricao: "As a college project, I developed a complete menu animation system in Unity, creating fluid and interactive screen transitions. In Maya, I worked on character animation, exploring professional techniques to achieve expressive, natural movements. Completed in under six months, this project earned recognition as the best in the course for its technical quality and creative application of animation principles.",
         projeto_3_titulo: "Sokowinter",
         projeto_3_descricao: "In just 2 months, I successfully completed the full console port of this Sokoban-style puzzle game to Nintendo Switch, PS4 and Xbox One. Developed cross-platform save systems, adapted controls including Switch-exclusive touch functionality, and implemented trophy/achievement systems for Sony and Microsoft platforms. Learned and applied Unity's new input system during the process, ensuring consistent and optimized gameplay experience across all platforms while overcoming console-specific technical challenges within the tight deadline.",
+        projeto_4_titulo: "Astrea: Six-Sided Oracles",
+        projeto_4_descricao: "Completed the Xbox One port with focus on performance optimization and achievements implementation. Currently working on the mobile version, developing performance improvement tools and integrating native Android APIs into the porting process.",
         botao_ver_projeto: "View Project",
         
         // Shaders
