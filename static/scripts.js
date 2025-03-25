@@ -148,13 +148,17 @@ const translations = {
         
         // Shaders
         shaders_titulo: "SHADER",
-        shaders_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
-        shader_1_titulo: "Nome do Shader 1",
-        shader_1_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
-        shader_2_titulo: "Nome do Shader 2",
-        shader_2_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
-        shader_3_titulo: "Nome do Shader 3",
-        shader_3_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shaders_subtitulo: "São shaders que fiz durante meus estudos.",
+        shader_1_titulo: "Shader Cloth",
+        shader_1_descricao: "Shader que simula o efeito de tecido, com textura e sombreamento.",
+        shader_2_titulo: "Shader Pedra e Grama",
+        shader_2_descricao: "Shader que muda a posição da grama e da posição da pedra com base na posição da pedra.",
+        shader_3_titulo: "Shader flipbook",
+        shader_3_descricao: "Shader que faz animação de sprites usando blueprint",
+        shader_4_titulo: "Shader water",
+        shader_4_descricao: "Shader que faz um efeito de água em fundo de piscina.",
+        shader_5_titulo: "Shader Ice",
+        shader_5_descricao: "Shader que faz um efeito de gelo.",
         botao_ver_github: "Ver no GitHub",
         
         // Rodapé
@@ -221,13 +225,17 @@ const translations = {
         
         // Shaders
         shaders_titulo: "SHADER",
-        shaders_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
-        shader_1_titulo: "Shader Name 1",
-        shader_1_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
-        shader_2_titulo: "Shader Name 2",
-        shader_2_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
-        shader_3_titulo: "Shader Name 3",
-        shader_3_descricao: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti architecto, voluptatum sit cupiditate quod omnis eveniet repellat laboriosam a quis?.",
+        shaders_subtitulo: "Shader I've created while learning Shader Graph",
+        shader_1_titulo: "Shader Cloth",
+        shader_1_descricao: "Shader that simulates cloth ilumination using the cloth simulation system in unreall engine.",
+        shader_2_titulo: "Shader Stone with Grass",
+        shader_2_descricao: "Shader that changes the position of the grass and the position on the stone based on stone position.",
+        shader_3_titulo: "Shader Flipbook",
+        shader_3_descricao: "shader that do animation of sprites using blueprint",
+        shader_4_titulo: "Shader Water",
+        shader_4_descricao: "Shader that simulates water animation on a pool",
+        shader_5_titulo: "Shader Ice",
+        shader_5_descricao: "Shader that simulates a ice cube",
         botao_ver_github: "View on GitHub",
         
         // Rodapé
