@@ -227,7 +227,7 @@ const translations = {
         shaders_titulo: "SHADER",
         shaders_subtitulo: "Shader I've created while learning Shader Graph",
         shader_1_titulo: "Shader Cloth",
-        shader_1_descricao: "Shader that simulates cloth ilumination using the cloth simulation system in unreall engine.",
+        shader_1_descricao: "Shader that simulates cloth ilumination using the cloth simulation system in unreal engine.",
         shader_2_titulo: "Shader Stone with Grass",
         shader_2_descricao: "Shader that changes the position of the grass and the position on the stone based on stone position.",
         shader_3_titulo: "Shader Flipbook",

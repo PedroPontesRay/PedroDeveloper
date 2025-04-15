@@ -882,43 +882,170 @@ header nav ul li a.footer-button {
     transform: translateY(0); /* Volta à posição original */
 }
 /* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .software-icons {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Colunas menores em telas pequenas */
-        gap: 6px; /* Espaçamento ainda menor em telas pequenas */
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    /* Header */
+    .container-header {
+        padding: 0 20px;
     }
 
-    .software-icons img {
-        max-width: 60px; /* Tamanho menor dos ícones em telas pequenas */
-    }
-}
-
-@media (max-width: 375px) {
-    body,html{
-        overflow-x: hidden;
-    }
-    .container {
-        width: 100%;
-        padding: 10px; /* Reduza o padding para evitar transbordamento */
-        box-sizing: border-box; /* Garante que o padding não aumente a largura */
-    }
-    .about-me {
-        flex-direction: column; /* Coloque os elementos em coluna em telas pequenas */
+    /* Intro */
+    .intro .container {
+        padding: 60px 20px;
     }
 
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 
     .vertical-divider {
-        display: none; /* Remove o divisor vertical em telas pequenas */
+        display: none;
+    }
+
+    /* Projects */
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card.reverse {
+        flex-direction: column;
+    }
+
+    .project-image, 
+    .project-content {
+        width: 100%;
+    }
+
+    /* Shaders */
+    .shader-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Smartphone: 320px - 767px */
+@media (max-width: 767px) {
+    /* Header */
+    .container-header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav-center, 
+    .nav-right {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-center li, 
+    .nav-right li {
+        margin: 5px 10px;
+    }
+
+    /* Intro */
+    .intro .container {
+        padding: 40px 15px;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .intro-cards {
+        justify-content: center;
+    }
+
+    /* Skills */
+    .hard-skills .software-icons {
+        justify-content: center;
+    }
+
+    .soft-skills-cards {
+        justify-content: center;
+    }
+
+    /* Projects */
+    .project-title h2 {
+        font-size: 2rem;
+    }
+
+    /* Shaders */
+    .shader-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shader-title h2 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer-action {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Smartphones pequenos: até 480px */
 @media (max-width: 480px) {
-    .software-icons {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Colunas ainda menores em telas muito pequenas */
-        gap: 4px; /* Espaçamento mínimo em telas muito pequenas */
+    /* Header */
+    .nav-center, 
+    .nav-right {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .software-icons img {
-        max-width: 50px; /* Tamanho menor dos ícones em telas muito pequenas */
+    /* Intro */
+    .intro-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-cards .card {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Skills */
+    .hard-skills .software-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-card {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Footer */
+    .footer-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-button {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 200px;
     }
 }
+
+/* Ajustes para orientação paisagem em smartphones
