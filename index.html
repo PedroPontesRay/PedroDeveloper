@@ -26,6 +26,8 @@
     <header>
         <div class="container-header">
             <h1 data-lang="nome_titulo">Pedro Pontes</h1>
+            
+            
             <nav>
                 <ul class="nav-center">
                     <li><a href="#inicio" data-lang="menu_inicio">Início</a></li>
@@ -40,6 +42,24 @@
                     <li><a href="#contato" class="footer-button" data-lang="menu_contato">Contato</a></li>
                 </ul>
             </nav>
+            <!-- Botão do menu hamburguer (visível apenas em mobile) -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Menu mobile (overlay) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#inicio" data-lang="menu_inicio">Início</a></li>
+                <li><a href="#sobre" data-lang="menu_sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades" data-lang="menu_habilidades">Habilidades</a></li>
+                <li><a href="#projetos" data-lang="menu_projetos">Projetos</a></li>
+                <li><a href="#shaders" data-lang="menu_shaders">Shaders</a></li>
+            </ul>
         </div>
     </header>
 

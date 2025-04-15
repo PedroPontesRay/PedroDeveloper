@@ -283,3 +283,38 @@ function toggleLanguage() {
 // Modificação principal: corrige o event listener do botão
 languageToggleButton.addEventListener("click", toggleLanguage);
 
+// Menu mobile
+const menuToggle = document.getElementById('menuToggle');
+const closeMenu = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
+const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+const languageToggleMobile = document.getElementById('languageToggleMobile');
+
+// Abrir menu
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+});
+
+// Fechar menu
+closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+// Fechar menu ao clicar em um link
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+});
+
+// Sincronizar toggle do tema
+themeToggleMobile.addEventListener('click', () => {
+    document.getElementById('theme-toggle').click();
+});
+
+// Sincronizar toggle de idioma
+languageToggleMobile.addEventListener('click', () => {
+    document.getElementById('languageToggle').click();
+});

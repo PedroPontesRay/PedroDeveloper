@@ -199,6 +199,91 @@ header nav ul li a.footer-button {
     opacity: 0;
     transform: scale(0.8);
 }
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+.mobile-menu li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: #4e93e6;
+}
+
+.mobile-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mobile-menu button img {
+    width: 20px;
+    height: 20px;
+}
 
 /* Botão de alternar tema */
 #theme-toggle {
@@ -890,6 +975,9 @@ header nav ul li a.footer-button {
     .container-header {
         padding: 0 20px;
     }
+    .mobile-menu {
+        display: none !important;
+    }
 
     /* Intro */
     .intro .container {
@@ -929,9 +1017,17 @@ header nav ul li a.footer-button {
 /* Smartphone: 320px - 767px */
 @media (max-width: 767px) {
     /* Header */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .container-header .nav-center {
+        display: none;
+    }
+    
     .container-header {
-        flex-direction: column;
-        padding: 15px;
+        justify-content: space-between;
+        padding: 15px 20px;
     }
 
     nav {
