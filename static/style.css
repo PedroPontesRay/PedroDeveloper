@@ -7,6 +7,7 @@
     --font-inconsolata: 'Inconsolata', monospace;
     --button-selected-color: #3a3636;
     --footer-divider-color: #ffffff;
+    background-color: #000000;
 }
 
 [data-theme="dark"] {
@@ -705,17 +706,18 @@ header nav ul li a.footer-button {
     padding: 50px 0;
     margin-bottom: 50px;
     background-image: url("../Images/Background/Footer_bg.svg");
-    background-position: center 300px; /* Move o background para baixo */
+    background-position:center bottom; /* Move o background para baixo */
     background-repeat: no-repeat; /* Evita repetição */
     background-size: cover; /* Cobrir todo o espaço */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh; /* Altura total da tela */
-    z-index: -1; /* Coloca o background atrás de tudo */
+    height: auto;        /* let it expand naturally */
+    min-height: 100vh;   /* optional: ensure it’s at least one screen high */
+    z-index: 0;          /* keep above backgrounds, but not over footer */
+    position: relative;  /* so z-index works properly */
 }
 .shaders, .shaders * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .shader-title {
