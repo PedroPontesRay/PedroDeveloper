@@ -7,7 +7,7 @@
     --font-inconsolata: 'Inconsolata', monospace;
     --button-selected-color: #3a3636;
     --footer-divider-color: #ffffff;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 [data-theme="dark"] {
