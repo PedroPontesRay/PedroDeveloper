@@ -360,7 +360,7 @@ header nav ul li a.footer-button {
 
 /* Estilos para a seção Habilidades */
 .skills {
-    padding: 50px 0;
+    margin-top: 2%;
 }
 
 .skills h2 {
@@ -1015,18 +1015,18 @@ header nav ul li a.footer-button {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 /* Smartphone: 320px - 767px */
 @media (max-width: 767px) {
+
     /* Header */
     .menu-toggle {
         display: block;
     }
-    
+
     .container-header .nav-center {
         display: none;
     }
-    
+
     .container-header {
         justify-content: space-between;
         padding: 15px 20px;
@@ -1037,39 +1037,142 @@ header nav ul li a.footer-button {
         margin-top: 15px;
     }
 
-    .nav-center, 
+    .nav-center,
     .nav-right {
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .nav-center li, 
-    .nav-right li {
-        margin: 5px 10px;
+    .nav-center li,
+        .nav-right li {
+            margin: 5px 10px;
+        }
+    
+        /* Intro */
+        .intro .container {
+            padding: 40px 15px;
+        }
+    
+        .intro-title {
+            font-size: 2rem;
+            text-align: center;
+        }
+    
+        .intro-cards {
+            justify-content: center;
+        }
+    
+        /* Skills */
+        .hard-skills .software-icons {
+            justify-content: center;
+        }
+    
+        .soft-skills-cards {
+            justify-content: center;
+        }
+    
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            /* empilha uma coluna abaixo da outra */
+            gap: 40px;
+            /* espaço entre as seções */
+        }
+    
+        .skills .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .skills h3 {
+            font-family: var(--font-reem-kufi);
+        font-size: 28px;
+        color: var(--skill-card-text-color);
+        text-align: left;
+        margin-bottom: 15px;
     }
 
-    /* Intro */
-    .intro .container {
-        padding: 40px 15px;
+    .about-me p {
+        font-size: 2vh;
+        line-height: 1.7;
+        color: var(--invert-color);
+        text-align: left;
+        margin-bottom: 20px;
     }
 
-    .intro-title {
-        font-size: 2rem;
-        text-align: center;
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 15px;
     }
 
-    .intro-cards {
+    .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    .contact-link i {
+        font-size: 26px;
+        color: var(--invert-color);
+    }
+
+    .contact-link span {
+        font-size: 16px;
+        font-family: var(--font-inconsolata);
+    }
+
+    .software-icons {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+        margin-bottom: 25px;
     }
 
-    /* Skills */
-    .hard-skills .software-icons {
-        justify-content: center;
+    .software-icons img {
+        width: 55px;
+        height: 55px;
+        padding: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        object-fit: contain;
     }
 
     .soft-skills-cards {
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 10px;
     }
+
+    .skill-card {
+        background: var(--skill-card-bg);
+        color: #fff;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .custom-divider {
+        width: 100%;
+        max-width: 700px;
+        margin: 25px auto;
+        height: 2px;
+        background-color: var(--linedivider-color);
+    }
+    /*End of skills*/
+
+
 
     /* Projects */
     .project-title h2 {
@@ -1099,8 +1202,9 @@ header nav ul li a.footer-button {
 
 /* Smartphones pequenos: até 480px */
 @media (max-width: 480px) {
+
     /* Header */
-    .nav-center, 
+    .nav-center,
     .nav-right {
         flex-direction: column;
         align-items: center;
