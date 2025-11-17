@@ -1,6 +1,6 @@
 :root {
     /*pra títulos*/
-    --font-titillium: 'Titillium Web', sans-serif; 
+    --font-titillium: 'Titillium Web', sans-serif;
     /*pra subtítulos*/
     --font-reem-kufi: 'Reem Kufi', sans-serif;
     /*pra textos*/
@@ -17,37 +17,39 @@
     --header-background: 0 0 10px transparent;
     --header-text: #f5f5f5;
     --card-text: #ffffff;
-    --invert-color:#ffffff;
+    --invert-color: #ffffff;
     --link-color: #66b3ff;
     --name-color: #A9CFE5;
     --linedivider-color: #ffffff;
     --background-image: url('../Images/Background/Dark_bg.svg');
     --shader-unselected-card-background: url('../Images/Background/Cards/Card_Un_Dark_Bg.svg');
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Dark_Bg.svg');
-    
+
     --intro-cards-text-color: #5989A3;
 
     --skill-card-text-color: #A9CFE5;
-    
+
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Dark.svg');
     --project-selected-card-background: url('../Images/Background/Cards/Project_Selected_bg_Dark.svg');
     --project-selected-title-card-color: #021b33;
     --project-unselected-title-card-color: #a9cfe5;
     --project-selected-description-card-color: #021b33;
     --project-unselected-description-card-color: #f7f7f7;
- 
+
     --shader-selected-title-card-color: #021b33;
     --shader-unselected-title-card-color: #A9CFE5;
     --shader-selected-description-card-color: #021b33;
     --shader-unselected-description-card-color: #f7f7f7;
-    
-    --footer-background: linear-gradient(to bottom, , transparent);;
+
+    --footer-background: linear-gradient(to bottom, , transparent);
+    ;
     --footer-text: white;
     --icon-color: #ffffff;
     --skill-card-bg: linear-gradient(to bottom, #12577B, transparent);
     --link-button-text-select-color: #ffffff;
     --link-button-text-unselect-color: #ffffff;
 }
+
 [data-theme="light"] {
     --background-color: #ffffff;
     --text-color: #3a3636;
@@ -55,7 +57,7 @@
     --header-background: #021B33;
     --header-text: #000000;
     --card-text: #ffffff;
-    --invert-color:#0d3d56;
+    --invert-color: #0d3d56;
     --link-color: #66b3ff;
     --name-color: #12577B;
     --linedivider-color: #000000;
@@ -64,7 +66,7 @@
     --shader-selected-card-background: url('../Images/Background/Cards/Card_Se_Light_Bg.svg');
 
     --intro-cards-text-color: #0D3D56;
-    
+
     --skill-card-text-color: #12577B;
 
     --project-unselected-card-background: url('../Images/Background/Cards/Project_Unselected_bg_Light.svg');
@@ -81,7 +83,7 @@
 
     --footer-background: url('../Images/Background/Footer_Light_BG.svg');
     --footer-text: white;
-    --icon-color:#021b33;
+    --icon-color: #021b33;
     --skill-card-bg: #0d3d56;
     --link-button-text-select-color: #ffffff;
     --link-button-text-unselect-color: 0 0 10px transparent;
@@ -92,10 +94,14 @@ a {
 }
 
 body {
-    background-image: var(--background-image); /* Caminho para o arquivo SVG */
-    background-size: cover; /* Cobrir todo o espaço do elemento */
-    background-position: center; /* Centralizar a imagem */
-    background-repeat: repeat; /* Evitar repetição */
+    background-image: var(--background-image);
+    /* Caminho para o arquivo SVG */
+    background-size: cover;
+    /* Cobrir todo o espaço do elemento */
+    background-position: center;
+    /* Centralizar a imagem */
+    background-repeat: repeat;
+    /* Evitar repetição */
     color: var(--text-color);
 
     width: 100%;
@@ -109,6 +115,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* Estilos gerais do header */
 header {
     margin: 0 auto;
@@ -120,6 +127,7 @@ header {
     right: 0;
     z-index: 1000;
 }
+
 /* Container do header */
 header .container-header {
     width: 100%;
@@ -134,7 +142,8 @@ header .container-header {
 header h1 {
     margin-inline-start: 5%;
     font-size: 24px;
-    flex: 1; /* Ocupa o espaço disponível à esquerda */
+    flex: 1;
+    /* Ocupa o espaço disponível à esquerda */
 }
 
 /* Navegação centralizada */
@@ -142,7 +151,8 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 2; /* Ocupa o espaço central */
+    flex: 2;
+    /* Ocupa o espaço central */
 }
 
 /* Lista central */
@@ -153,7 +163,8 @@ header nav .nav-center {
     padding-left: 5%;
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaçamento entre os itens do menu */
+    gap: 20px;
+    /* Espaçamento entre os itens do menu */
 }
 
 /* Lista à direita */
@@ -163,9 +174,12 @@ header nav .nav-right {
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaçamento entre os itens */
-    flex: 1; /* Ocupa o espaço disponível à direita */
-    justify-content: flex-end; /* Alinha os itens à direita */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    flex: 1;
+    /* Ocupa o espaço disponível à direita */
+    justify-content: flex-end;
+    /* Alinha os itens à direita */
     margin-inline-end: 5%;
 }
 
@@ -184,6 +198,7 @@ header nav ul li a.footer-button {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
 .button-language {
     background-color: transparent;
     border: none;
@@ -192,6 +207,7 @@ header nav ul li a.footer-button {
     color: #fff;
     transition: color 0.3s ease;
 }
+
 #language-icon {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -200,6 +216,7 @@ header nav ul li a.footer-button {
     opacity: 0;
     transform: scale(0.8);
 }
+
 .menu-toggle {
     display: none;
     background: none;
@@ -300,7 +317,7 @@ header nav ul li a.footer-button {
 /* Estilos para a seção Início */
 .intro {
     text-align: center;
-    padding: 50px ;
+    padding: 50px;
     padding-top: 5%;
 }
 
@@ -318,13 +335,15 @@ header nav ul li a.footer-button {
     font-weight: 1000;
     color: var(--text-color);
 }
-.before-highlight-name{
+
+.before-highlight-name {
     font-size: 64px;
     margin-bottom: 20px;
     font-family: var(--font-titillium);
     font-weight: 1000;
     color: var(--text-color);
 }
+
 .highlight-name {
     font-size: 64px;
     font-weight: 1000;
@@ -335,7 +354,8 @@ header nav ul li a.footer-button {
 .intro-cards {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre os cards */
+    gap: 20px;
+    /* Espaçamento entre os cards */
     margin-top: 20px;
 }
 
@@ -356,6 +376,7 @@ header nav ul li a.footer-button {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 /*End intro*/
 
 /* Estilos para a seção Habilidades */
@@ -370,18 +391,25 @@ header nav ul li a.footer-button {
 
 .skills-grid {
     display: flex;
-    gap: 40px; /* Espaçamento entre as colunas */
+    gap: 40px;
+    /* Espaçamento entre as colunas */
 }
 
 .column {
-    flex: 1; /* Cada coluna ocupa metade do espaço */
+    flex: 1;
+    /* Cada coluna ocupa metade do espaço */
 }
-.column h3, h2{
+
+.column h3,
+h2 {
     font-family: var(--font-reem-kufi);
     color: var(--skill-card-text-color);
     font-size: 32px;
 }
-.column p, span,.skill-card{
+
+.column p,
+span,
+.skill-card {
     font-family: var(--font-inconsolata);
     font-weight: bolder;
 }
@@ -398,14 +426,18 @@ header nav ul li a.footer-button {
     line-height: 1.6;
     color: var(--invert-color);
 }
+
 .contact .container {
-    max-width: 1200px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner */
+    max-width: 1200px;
+    /* Largura máxima do contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
     padding: 20px;
 }
 
 .contact h2 {
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: left;
+    /* Alinha o título à esquerda */
     margin-bottom: 20px;
     font-size: 28px;
     color: var(--text-color);
@@ -413,16 +445,21 @@ header nav ul li a.footer-button {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    grid-template-rows: repeat(3, auto); /* 3 linhas */
-    gap: 15px; /* Espaçamento entre os itens */
-    text-align: left; /* Alinha o texto à esquerda */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
+    grid-template-rows: repeat(3, auto);
+    /* 3 linhas */
+    gap: 15px;
+    /* Espaçamento entre os itens */
+    text-align: left;
+    /* Alinha o texto à esquerda */
 }
 
 .contact-link {
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaço entre o ícone e o texto */
+    gap: 8px;
+    /* Espaço entre o ícone e o texto */
 }
 
 .contact-link i {
@@ -439,6 +476,7 @@ header nav ul li a.footer-button {
     text-shadow: 0 0 10px rgb(255, 255, 255);
     color: var(--invert-color);
 }
+
 .contact-link i {
     font-size: 30px;
 }
@@ -453,7 +491,8 @@ header nav ul li a.footer-button {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px; /* Posiciona a linha abaixo do texto */
+    bottom: -2px;
+    /* Posiciona a linha abaixo do texto */
     width: 100%;
     height: 2px;
     background-color: var(--linedivider-color);
@@ -462,7 +501,8 @@ header nav ul li a.footer-button {
 }
 
 .contact-grid a:hover span::after {
-    transform: scaleX(1); /* Mostra a linha no hover */
+    transform: scaleX(1);
+    /* Mostra a linha no hover */
 }
 
 .contact-links ul li {
@@ -483,21 +523,33 @@ header nav ul li a.footer-button {
 
 .software-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colunas maiores */
-    gap: 0; /* Sem espaçamento */
-    justify-content: start; /* Alinha os ícones à esquerda */
-    margin: 0; /* Remove margens do contêiner */
-    padding: 0; /* Remove padding do contêiner */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    /* Colunas maiores */
+    gap: 0;
+    /* Sem espaçamento */
+    justify-content: start;
+    /* Alinha os ícones à esquerda */
+    margin: 0;
+    /* Remove margens do contêiner */
+    padding: 0;
+    /* Remove padding do contêiner */
 }
 
 .software-icons img {
-    width: 100%; /* Ocupa 100% da célula */
-    height: 100%; /* Ocupa 100% da altura da célula */
-    max-width: 120px; /* Tamanho máximo dos ícones */
-    object-fit: cover; /* Preenche a célula sem distorcer */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove padding */
-    box-sizing: border-box; /* Inclui padding na largura */
+    width: 100%;
+    /* Ocupa 100% da célula */
+    height: 100%;
+    /* Ocupa 100% da altura da célula */
+    max-width: 120px;
+    /* Tamanho máximo dos ícones */
+    object-fit: cover;
+    /* Preenche a célula sem distorcer */
+    margin: 0;
+    /* Remove margens */
+    padding: 0;
+    /* Remove padding */
+    box-sizing: border-box;
+    /* Inclui padding na largura */
 }
 
 
@@ -516,7 +568,8 @@ header nav ul li a.footer-button {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    display: inline-block; /* Faz o card se adaptar ao conteúdo */
+    display: inline-block;
+    /* Faz o card se adaptar ao conteúdo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -525,7 +578,7 @@ header nav ul li a.footer-button {
 
 /*Projects*/
 
-.project-title{
+.project-title {
     height: 100%;
     width: auto;
 }
@@ -538,7 +591,8 @@ header nav ul li a.footer-button {
     color: var(--text-color);
     margin-bottom: -1%;
 }
-.project-title p{
+
+.project-title p {
     font-family: var(--font-inconsolata);
     font-weight: bolder;
     font-size: 24px;
@@ -561,39 +615,47 @@ header nav ul li a.footer-button {
     background-size: 100% 100%;
     background-position: center;
     padding: 20px;
-    margin-left: -1.5%;/*Margin para alinhar com o titulo*/
+    margin-left: -1.5%;
+    /*Margin para alinhar com o titulo*/
 
 
     position: relative;
     overflow: hidden;
 }
-.project-image{
+
+.project-image {
     border-radius: 10px;
     height: 100%;
     width: auto;
 }
+
 .project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.project-card .link-button{
+
+.project-card .link-button {
     display: flex;
     align-items: flex-end;
 }
+
 .project-card h3 {
     color: var(--project-unselected-title-card-color);
     transition: color 0.3s ease;
 }
+
 .project-card p {
     color: var(--project-unselected-description-card-color);
     transition: color 0.3s ease;
 }
-.project-card:hover h3{
-    color: var(--project-selected-title-card-color);    
+
+.project-card:hover h3 {
+    color: var(--project-selected-title-card-color);
     transition: color 0.3s ease;
 }
-.project-card:hover p{
+
+.project-card:hover p {
     color: var(--project-selected-description-card-color);
     transition: color 0.3s ease;
 }
@@ -616,7 +678,7 @@ header nav ul li a.footer-button {
     opacity: 1;
 }
 
-.project-card > * {
+.project-card>* {
     position: relative;
     z-index: 2;
 }
@@ -624,13 +686,16 @@ header nav ul li a.footer-button {
 .project-card.reverse {
     flex-direction: row-reverse;
 }
+
 .project-image {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1;
+    /* Ocupa metade do espaço */
 }
 
 .project-image img {
     width: 100%;
-    max-width: 500px; /* Largura máxima da imagem */
+    max-width: 500px;
+    /* Largura máxima da imagem */
     height: auto;
     border-radius: 10px;
     display: block;
@@ -644,18 +709,23 @@ header nav ul li a.footer-button {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinha o conteúdo no topo e o botão no fundo */
-    position: relative; /* Permite posicionar o botão de forma absoluta dentro dele */
+    justify-content: space-between;
+    /* Alinha o conteúdo no topo e o botão no fundo */
+    position: relative;
+    /* Permite posicionar o botão de forma absoluta dentro dele */
     padding: 0 30px;
     height: 80%;
 }
-.project-content .link-button{
-    width: 40%;/* Faz o botão ter o tamanho correspondente ao texto */
+
+.project-content .link-button {
+    width: 40%;
+    /* Faz o botão ter o tamanho correspondente ao texto */
     height: auto;
     font-family: var(--font-inconsolata);
     font-weight: bold;
     text-shadow: 0 0 10px var(--link-button-text-unselect-color);
 }
+
 .project-content h3 {
     font-family: var(--font-reem-kufi);
     font-size: 32px;
@@ -669,6 +739,7 @@ header nav ul li a.footer-button {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
 /* Estilos para o botão */
 .link-button {
     display: inline-flex;
@@ -693,30 +764,41 @@ header nav ul li a.footer-button {
 .link-button .arrow {
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-left: auto; /* Move a seta para o canto direito */
+    margin-left: auto;
+    /* Move a seta para o canto direito */
 }
 
 .link-button:hover .arrow {
     opacity: 1;
     transform: translateX(5px);
 }
+
 /*End Projects*/
 /*Shader*/
 .shaders {
     padding: 50px 0;
     margin-bottom: 50px;
     background-image: url("../Images/Background/Footer_bg.svg");
-    background-position:center bottom; /* Move o background para baixo */
-    background-repeat: no-repeat; /* Evita repetição */
-    background-size: cover; /* Cobrir todo o espaço */
+    background-position: center bottom;
+    /* Move o background para baixo */
+    background-repeat: no-repeat;
+    /* Evita repetição */
+    background-size: cover;
+    /* Cobrir todo o espaço */
     top: 0;
     left: 0;
-    height: auto;        /* let it expand naturally */
-    min-height: 100vh;   /* optional: ensure it’s at least one screen high */
-    z-index: 0;          /* keep above backgrounds, but not over footer */
-    position: relative;  /* so z-index works properly */
+    height: auto;
+    /* let it expand naturally */
+    min-height: 100vh;
+    /* optional: ensure it’s at least one screen high */
+    z-index: 0;
+    /* keep above backgrounds, but not over footer */
+    position: relative;
+    /* so z-index works properly */
 }
-.shaders, .shaders * {
+
+.shaders,
+.shaders * {
     box-sizing: content-box;
 }
 
@@ -724,6 +806,7 @@ header nav ul li a.footer-button {
     height: 100%;
     width: auto;
 }
+
 .shader-title h2 {
     font-family: var(--font-titillium);
     font-weight: 1000;
@@ -732,7 +815,8 @@ header nav ul li a.footer-button {
     color: var(--text-color);
     margin-bottom: -1%;
 }
-.shader-title p{
+
+.shader-title p {
     font-family: var(--font-inconsolata);
     font-weight: bolder;
     font-size: 24px;
@@ -747,10 +831,14 @@ header nav ul li a.footer-button {
 
 .shader-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards responsivos */
-    gap: 20px; /* Espaçamento entre os cards */
-    margin-left: -1.5%;/*Margin para alinhar com o titulo*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Cards responsivos */
+    gap: 20px;
+    /* Espaçamento entre os cards */
+    margin-left: -1.5%;
+    /*Margin para alinhar com o titulo*/
 }
+
 .shader-grid::after {
     content: "";
     display: table;
@@ -758,39 +846,54 @@ header nav ul li a.footer-button {
 }
 
 .shader-card {
-    background-image: var(--shader-unselected-card-background); /* Imagem de fundo do card */
-    background-size: cover; /* Cobrir todo o espaço do card */
-    background-position: center; /* Centralizar a imagem */
+    background-image: var(--shader-unselected-card-background);
+    /* Imagem de fundo do card */
+    background-size: cover;
+    /* Cobrir todo o espaço do card */
+    background-position: center;
+    /* Centralizar a imagem */
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 352px; /* Largura fixa */
-    aspect-ratio: 352 / 544; /* Proporção fixa baseada na resolução desejada */
+    width: 352px;
+    /* Largura fixa */
+    aspect-ratio: 352 / 544;
+    /* Proporção fixa baseada na resolução desejada */
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    padding: 20px; /* Espaçamento interno */
-    text-align: left; /* Alinha todo o texto à esquerda */
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+    justify-content: space-between;
+    /* Distribui o espaço entre os elementos */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: left;
+    /* Alinha todo o texto à esquerda */
 }
+
 .shader-card h3 {
     font-family: var(--font-titillium);
     font-size: 24px;
     font-weight: 500;
     color: var(--shader-unselected-title-card-color);
     margin: 0px 20px 10px;
-    text-align: left; /* Alinha todo o texto à esquerda */
+    text-align: left;
+    /* Alinha todo o texto à esquerda */
 }
-.shader-card:hover h3{
+
+.shader-card:hover h3 {
     color: var(--shader-selected-title-card-color);
 }
+
 .shader-card p {
     font-family: var(--font-inconsolata);
     font-size: 16px;
     margin: 0 20px 0px;
-    text-align: left; /* Alinha todo o texto à esquerda */
+    text-align: left;
+    /* Alinha todo o texto à esquerda */
     color: var(--shader-unselected-description-card-color);
 }
-.shader-card:hover p{
+
+.shader-card:hover p {
     color: var(--shader-selected-description-card-color);
 }
 
@@ -798,7 +901,8 @@ header nav ul li a.footer-button {
     background-image: var(--shader-selected-card-background);
     transform: translateY(-5px);
 }
-.shader-card .link-button{
+
+.shader-card .link-button {
     display: flex;
     margin: 0px 20px 10px;
     border-radius: 5px;
@@ -813,26 +917,35 @@ header nav ul li a.footer-button {
 
 .shader-image img {
     width: 90%;
-    height: auto; /* Altura fixa para a imagem */
+    height: auto;
+    /* Altura fixa para a imagem */
     border-radius: 2.5%;
     margin-top: 5%;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorcer */
 }
 
 /*End Shader*/
 
 
 .custom-divider {
-    height: 1px; /* Espessura da linha */
-    background-color: var(--linedivider-color); /* Cor da linha */
-    margin: 1px auto; /* Margem superior e inferior */
-    width: 80%; /* Largura da linha */
+    height: 1px;
+    /* Espessura da linha */
+    background-color: var(--linedivider-color);
+    /* Cor da linha */
+    margin: 1px auto;
+    /* Margem superior e inferior */
+    width: 80%;
+    /* Largura da linha */
 }
 
 .vertical-divider {
-    width: 2px; /* Espessura da linha */
-    background-color: var(--linedivider-color); /* Cor da linha */
-    margin: 0 20px; /* Espaçamento entre as colunas */
+    width: 2px;
+    /* Espessura da linha */
+    background-color: var(--linedivider-color);
+    /* Cor da linha */
+    margin: 0 20px;
+    /* Espaçamento entre as colunas */
 }
 
 .profile img {
@@ -848,7 +961,9 @@ header nav ul li a.footer-button {
     color: #333;
 }
 
-.skills, .projects, .shaders {
+.skills,
+.projects,
+.shaders {
     padding: 1px 0;
 }
 
@@ -857,16 +972,19 @@ header nav ul li a.footer-button {
     margin-bottom: 40px;
 }
 
-.hard-skills, .soft-skills {
+.hard-skills,
+.soft-skills {
     margin-bottom: 40px;
 }
 
-.project, .shader-card {
+.project,
+.shader-card {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.project img, .shader-card img {
+.project img,
+.shader-card img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -959,24 +1077,29 @@ header nav ul li a.footer-button {
 /* Esconde os elementos inicialmente */
 .animate-on-scroll {
     opacity: 0;
-    transform: translateY(50px); /* Começa 50px abaixo */
+    transform: translateY(50px);
+    /* Começa 50px abaixo */
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 /* Quando os elementos estiverem visíveis */
 .animate-on-scroll.visible {
     opacity: 1;
-    transform: translateY(0); /* Volta à posição original */
+    transform: translateY(0);
+    /* Volta à posição original */
 }
+
 /* Ajustes para telas menores */
 /* ==================== MEDIA QUERIES ==================== */
 
 /* Tablet: 768px - 1024px */
 @media (max-width: 1024px) {
+
     /* Header */
     .container-header {
         padding: 0 20px;
     }
+
     .mobile-menu {
         display: none !important;
     }
@@ -1005,7 +1128,7 @@ header nav ul li a.footer-button {
         flex-direction: column;
     }
 
-    .project-image, 
+    .project-image,
     .project-content {
         width: 100%;
     }
@@ -1015,6 +1138,7 @@ header nav ul li a.footer-button {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* Smartphone: 320px - 767px */
 @media (max-width: 767px) {
 
@@ -1044,50 +1168,50 @@ header nav ul li a.footer-button {
     }
 
     .nav-center li,
-        .nav-right li {
-            margin: 5px 10px;
-        }
-    
-        /* Intro */
-        .intro .container {
-            padding: 40px 15px;
-        }
-    
-        .intro-title {
-            font-size: 2rem;
-            text-align: center;
-        }
-    
-        .intro-cards {
-            justify-content: center;
-        }
-    
-        /* Skills */
-        .hard-skills .software-icons {
-            justify-content: center;
-        }
-    
-        .soft-skills-cards {
-            justify-content: center;
-        }
-    
-        .skills-grid {
-            display: flex;
-            flex-direction: column;
-            /* empilha uma coluna abaixo da outra */
-            gap: 40px;
-            /* espaço entre as seções */
-        }
-    
-        .skills .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-    
-        .skills h3 {
-            font-family: var(--font-reem-kufi);
+    .nav-right li {
+        margin: 5px 10px;
+    }
+
+    /* Intro */
+    .intro .container {
+        padding: 40px 15px;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .intro-cards {
+        justify-content: center;
+    }
+
+    /* Skills */
+    .hard-skills .software-icons {
+        justify-content: center;
+    }
+
+    .soft-skills-cards {
+        justify-content: center;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        /* empilha uma coluna abaixo da outra */
+        gap: 40px;
+        /* espaço entre as seções */
+    }
+
+    .skills .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .skills h3 {
+        font-family: var(--font-reem-kufi);
         font-size: 28px;
         color: var(--skill-card-text-color);
         text-align: left;
@@ -1170,6 +1294,7 @@ header nav ul li a.footer-button {
         height: 2px;
         background-color: var(--linedivider-color);
     }
+
     /*End of skills*/
 
 
