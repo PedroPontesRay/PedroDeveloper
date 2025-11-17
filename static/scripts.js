@@ -135,7 +135,7 @@ const translations = {
         
         // Projetos
         projetos_titulo: "PROJETOS",
-        projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        projetos_subtitulo: "Projects I have worked on during my career",
         projeto_1_titulo: "Kids Coloring Book and Drawing",
         projeto_1_descricao: "Desenvolvi um jogo educativo em Unity com sistemas de menus, seleção de cores e ferramentas de pintura (pincéis, glitter, texturas). Implementei um plugin de pintura com touch/mouse, salvamento de arte (JSON) e compartilhamento. Otimizei para mobile e desktop, adicionando feedbacks visuais e sonoros. Tecnologias: C#, Unity UI, Shaders, DOTween. Foco em usabilidade infantil e criatividade.",
         projeto_2_titulo: "Toy Defense",
@@ -148,7 +148,7 @@ const translations = {
         
         // Shaders
         shaders_titulo: "SHADER",
-        shaders_subtitulo: "São shaders que fiz durante meus estudos.",
+        shaders_subtitulo: "São shaders que fiz durante meus estudos com shader graph e HLSL.",
         shader_1_titulo: "Shader Cloth",
         shader_1_descricao: "Shader que simula o efeito de tecido, com textura e sombreamento.",
         shader_2_titulo: "Shader Pedra e Grama",
@@ -212,7 +212,7 @@ const translations = {
         
         // Projetos
         projetos_titulo: "PROJECTS",
-        projetos_subtitulo: "Lorem ipsum dolor sit amet consectetur.",
+        projetos_subtitulo: "Projetos que trabalhei durante minha carreira",
         projeto_1_titulo: "Kids Coloring Book and Drawing",
         projeto_1_descricao: "Developed an educational Unity game featuring dynamic menus, color selection, and painting tools (brushes, glitter, textures). Integrated a touch/mouse painting plugin with artwork saving (JSON) and sharing. Optimized for mobile and desktop with visual/audio feedback. Tech stack: C#, Unity UI, Shaders, DOTween. Focused on child-friendly usability and creativity.",
         projeto_2_titulo: "Toy Defense",
@@ -225,7 +225,7 @@ const translations = {
         
         // Shaders
         shaders_titulo: "SHADER",
-        shaders_subtitulo: "Shader I've created while learning Shader Graph",
+        shaders_subtitulo: "They are shaders I made during my studies with Shader Graph and HLSL.",
         shader_1_titulo: "Shader Cloth",
         shader_1_descricao: "Shader that simulates cloth ilumination using the cloth simulation system in unreal engine.",
         shader_2_titulo: "Shader Stone with Grass",
