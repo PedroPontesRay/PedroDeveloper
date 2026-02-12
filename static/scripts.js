@@ -1,5 +1,7 @@
+
 // Seleciona o botão de alternância
 const themeToggle = document.getElementById('theme-toggle');
+const profilePic = document.getElementById('profile-pic');
 
 // Verifica se há uma preferência salva no localStorage
 const savedTheme = localStorage.getItem('theme');
@@ -11,6 +13,20 @@ if (savedTheme) {
     localStorage.setItem('theme', 'dark');
 }
 
+const imagesProfile = {
+    dark: "Images/PFP-night.png", 
+    light: "Images/PFP-day.png"
+}
+
+function updateProfilePic(theme) {
+    console.log(theme)
+    if (profilePic) {
+        profilePic.src = imagesProfile[theme];
+    }
+}
+
+updateProfilePic(savedTheme);
+
 // Configura o ícone do botão de alternância com base no tema atual
 if (document.documentElement.getAttribute('data-theme') === 'dark') {
     themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
@@ -20,16 +36,22 @@ if (document.documentElement.getAttribute('data-theme') === 'dark') {
 
 // Função para alternar entre os temas
 themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'light');
-        themeToggle.innerHTML = '<i class="fa-solid fa-moon" style="color: #ffffff;"></i>';
-        localStorage.setItem('theme', 'light');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggle.innerHTML = '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>';
-        localStorage.setItem('theme', 'dark');
-    }
+const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    // Atualiza o atributo no HTML
+    document.documentElement.setAttribute('data-theme', newTheme);
+    
+    // Salva a escolha
+    localStorage.setItem('theme', newTheme);
+    
+    // Troca a imagem de perfil
+    updateProfilePic(newTheme);
+    
+    // Troca o ícone do botão
+    themeToggle.innerHTML = newTheme === 'dark'
+        ? '<i class="fa-solid fa-sun" style="color: #ffffff;"></i>'
+        : '<i class="fa-solid fa-moon" style="color: #ffffff;"></i>';
 });
 
 // Rolagem suave para as seções
