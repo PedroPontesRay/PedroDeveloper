@@ -135,7 +135,7 @@ const translations = {
         
         // Projetos
         projetos_titulo: "PROJETOS",
-        projetos_subtitulo: "Projects I have worked on during my career",
+        projetos_subtitulo: "Projetos que eu trabalhei durante minha carreira como game dev",
         projeto_1_titulo: "Kids Coloring Book and Drawing",
         projeto_1_descricao: "Desenvolvi um jogo educativo em Unity com sistemas de menus, seleção de cores e ferramentas de pintura (pincéis, glitter, texturas). Implementei um plugin de pintura com touch/mouse, salvamento de arte (JSON) e compartilhamento. Otimizei para mobile e desktop, adicionando feedbacks visuais e sonoros. Tecnologias: C#, Unity UI, Shaders, DOTween. Foco em usabilidade infantil e criatividade.",
         projeto_2_titulo: "Toy Defense",
